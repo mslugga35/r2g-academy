@@ -214,10 +214,9 @@ export default function Home() {
               <h3 className="font-display text-2xl text-[#1a2855] mb-2 text-center">Skill Development</h3>
               <p className="text-[#a89a5c] font-semibold text-center mb-2">with Jemile Weeks</p>
               <div className="text-[#a89a5c] font-display text-4xl mb-2 text-center">$70</div>
-              <p className="text-[#1a2855] font-semibold mb-4 text-center">2 hours • Sat & Sun</p>
+              <p className="text-[#1a2855] font-semibold mb-4 text-center">2 hours • Sat or Sun</p>
               <p className="text-gray-600 text-sm mb-4 text-center">
-                9 AM - 9 PM<br/>
-                Elite skill development training
+                Registration gives you day, time and location.
               </p>
               <a href="https://form.jotform.com/252495004595057" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#1a2855] text-white px-6 py-3 font-bold text-sm uppercase tracking-wider hover:bg-[#0f1a38] transition-colors w-full text-center">
                 Register Now
@@ -325,11 +324,11 @@ export default function Home() {
                   />
                 </div>
                 <h3 className="font-display text-3xl text-white">Jemile Weeks</h3>
-                <p className="text-[#a89a5c]">Skill Development • $70/2hr • Sat-Sun</p>
+                <p className="text-[#a89a5c]">Skill Development • $70/2hr • Sat or Sun</p>
               </div>
               <div className="p-6 text-center">
                 <p className="text-gray-600 mb-6">
-                  Former MLB player offering elite skill development training. Available Saturdays & Sundays, 9 AM - 9 PM.
+                  Former MLB player offering elite skill development training. Registration gives you day, time and location.
                 </p>
                 <a
                   href="https://form.jotform.com/252495004595057"
