@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://r2gacademy.com/sitemap.xml
