@@ -3,39 +3,36 @@ import { MetadataRoute } from 'next'
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://r2gacademy.com'
 
-  // Only include pages that actually exist
-  // Single-page site with anchor sections
+  const blogPosts = [
+    '5-drills-to-improve-batting-average',
+    'indoor-vs-outdoor-batting-cages',
+    'when-should-kids-start-baseball-training',
+    'common-hitting-mistakes-and-fixes',
+    'benefits-of-after-school-sports-programs',
+    'off-season-training-tips',
+  ]
+
   return [
+    // Homepage
     {
       url: baseUrl,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 1,
     },
-    // Anchor sections for better crawling hints
+    // Blog index
     {
-      url: `${baseUrl}/#services`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/#schedule`,
+      url: `${baseUrl}/blog`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
-      priority: 0.8,
+      priority: 0.9,
     },
-    {
-      url: `${baseUrl}/#gallery`,
+    // Blog posts
+    ...blogPosts.map((slug) => ({
+      url: `${baseUrl}/blog/${slug}`,
       lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/#contact`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: 'monthly' as const,
       priority: 0.8,
-    },
+    })),
   ]
 }

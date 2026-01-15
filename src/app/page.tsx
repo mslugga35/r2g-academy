@@ -25,7 +25,7 @@ export default function Home() {
               <a href="#services" className="text-white/80 hover:text-[#a89a5c] font-semibold text-sm uppercase tracking-wider transition-colors">Programs</a>
               <a href="#schedule" className="text-white/80 hover:text-[#a89a5c] font-semibold text-sm uppercase tracking-wider transition-colors">Schedule</a>
               <a href="#gallery" className="text-white/80 hover:text-[#a89a5c] font-semibold text-sm uppercase tracking-wider transition-colors">Gallery</a>
-              <a href="#wins" className="text-white/80 hover:text-[#a89a5c] font-semibold text-sm uppercase tracking-wider transition-colors">Champions</a>
+              <a href="/blog" className="text-white/80 hover:text-[#a89a5c] font-semibold text-sm uppercase tracking-wider transition-colors">Blog</a>
               <a href="#contact" className="text-white/80 hover:text-[#a89a5c] font-semibold text-sm uppercase tracking-wider transition-colors">Contact</a>
               <a href="#schedule" className="bg-[#a89a5c] text-[#1a2855] px-5 py-2 font-bold text-sm uppercase tracking-wider hover:bg-[#c4b87a] transition-colors">
                 Book Now
