@@ -195,8 +195,8 @@ export default function Home() {
               <p className="text-white/60 text-sm mb-6 text-center">
                 One-on-one elite training with experienced coaching.
               </p>
-              <a href="https://r2gacademy.com/ola/services/training-with-tony-vega#fdb9c214-dea2-4937-8367-b26357febf4b" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#a89a5c] text-[#1a2855] px-6 py-3 font-bold text-sm uppercase tracking-wider hover:bg-[#c4b87a] transition-colors w-full text-center">
-                Book with Tony
+              <a href="tel:3522986699" className="inline-block bg-[#a89a5c] text-[#1a2855] px-6 py-3 font-bold text-sm uppercase tracking-wider hover:bg-[#c4b87a] transition-colors w-full text-center">
+                📞 Call to Book
               </a>
             </div>
 
@@ -302,12 +302,10 @@ export default function Home() {
                   Elite one-on-one training sessions with experienced coaching. Build your skills with personalized attention.
                 </p>
                 <a
-                  href="https://r2gacademy.com/ola/services/training-with-tony-vega#fdb9c214-dea2-4937-8367-b26357febf4b"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="tel:3522986699"
                   className="inline-block bg-[#a89a5c] text-[#1a2855] px-8 py-4 font-bold uppercase tracking-wider hover:bg-[#c4b87a] transition-colors w-full"
                 >
-                  Book with Tony
+                  📞 Call to Book
                 </a>
               </div>
             </div>
