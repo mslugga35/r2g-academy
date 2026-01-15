@@ -27,6 +27,28 @@ body {
   overflow-x: hidden;
 }
 
+/* Accessibility: Focus visible styles */
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* Skip to main content link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--navy);
+  color: white;
+  padding: 8px 16px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 /* Grain texture overlay */
 .grain {
   position: fixed;

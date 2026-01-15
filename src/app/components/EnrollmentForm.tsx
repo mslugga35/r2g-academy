@@ -12,6 +12,7 @@ interface EnrollmentFormProps {
 export default function EnrollmentForm({ isOpen, onClose, programType }: EnrollmentFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const programDetails = {
     afterschool: {
@@ -27,6 +28,7 @@ export default function EnrollmentForm({ isOpen, onClose, programType }: Enrollm
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError(null);
 
     const form = e.currentTarget;
     const formData = new FormData(form);
@@ -40,9 +42,11 @@ export default function EnrollmentForm({ isOpen, onClose, programType }: Enrollm
       if (response.ok) {
         setIsSuccess(true);
         form.reset();
+      } else {
+        setError('Failed to submit. Please try again or call us at (352) 298-6699.');
       }
-    } catch (error) {
-      console.error('Form submission error:', error);
+    } catch {
+      setError('Connection error. Please try again or call us at (352) 298-6699.');
     } finally {
       setIsSubmitting(false);
     }
@@ -94,86 +98,101 @@ export default function EnrollmentForm({ isOpen, onClose, programType }: Enrollm
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
-              {/* Web3Forms Access Key - Replace with your key */}
-              <input type="hidden" name="access_key" value="9baeeaae-068a-4592-bc9e-9067d0dd75ed" />
+              {/* Web3Forms Access Key */}
+              <input type="hidden" name="access_key" value={process.env.NEXT_PUBLIC_WEB3FORMS_KEY || '9baeeaae-068a-4592-bc9e-9067d0dd75ed'} />
               <input type="hidden" name="subject" value={`R2G Academy - ${programDetails[programType].title}`} />
               <input type="hidden" name="from_name" value="R2G Academy Website" />
+              {/* Honeypot for spam prevention */}
+              <input type="text" name="botcheck" className="hidden" style={{display: 'none'}} tabIndex={-1} autoComplete="off" />
+
+              {error && (
+                <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded" role="alert">
+                  {error}
+                </div>
+              )}
 
               <div>
-                <label className="block text-sm font-semibold text-[#1a2855] mb-1">Child&apos;s Name *</label>
+                <label htmlFor="child_name" className="block text-sm font-semibold text-[#1a2855] mb-1">Child&apos;s Name *</label>
                 <input
                   type="text"
+                  id="child_name"
                   name="child_name"
                   required
-                  className="w-full px-4 py-3 border-2 border-gray-200 focus:border-[#a89a5c] outline-none transition-colors"
+                  className="w-full px-4 py-3 border-2 border-gray-200 focus:border-[#a89a5c] focus:ring-2 focus:ring-[#a89a5c]/20 outline-none transition-colors"
                   placeholder="Enter child's name"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-[#1a2855] mb-1">Age *</label>
+                <label htmlFor="age" className="block text-sm font-semibold text-[#1a2855] mb-1">Age *</label>
                 <input
                   type="number"
+                  id="age"
                   name="age"
                   required
                   min="5"
                   max="18"
-                  className="w-full px-4 py-3 border-2 border-gray-200 focus:border-[#a89a5c] outline-none transition-colors"
+                  className="w-full px-4 py-3 border-2 border-gray-200 focus:border-[#a89a5c] focus:ring-2 focus:ring-[#a89a5c]/20 outline-none transition-colors"
                   placeholder="Enter age"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-[#1a2855] mb-1">Parent/Guardian Name *</label>
+                <label htmlFor="parent_name" className="block text-sm font-semibold text-[#1a2855] mb-1">Parent/Guardian Name *</label>
                 <input
                   type="text"
+                  id="parent_name"
                   name="parent_name"
                   required
-                  className="w-full px-4 py-3 border-2 border-gray-200 focus:border-[#a89a5c] outline-none transition-colors"
+                  className="w-full px-4 py-3 border-2 border-gray-200 focus:border-[#a89a5c] focus:ring-2 focus:ring-[#a89a5c]/20 outline-none transition-colors"
                   placeholder="Enter parent name"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-[#1a2855] mb-1">Email *</label>
+                <label htmlFor="email" className="block text-sm font-semibold text-[#1a2855] mb-1">Email *</label>
                 <input
                   type="email"
+                  id="email"
                   name="email"
                   required
-                  className="w-full px-4 py-3 border-2 border-gray-200 focus:border-[#a89a5c] outline-none transition-colors"
+                  className="w-full px-4 py-3 border-2 border-gray-200 focus:border-[#a89a5c] focus:ring-2 focus:ring-[#a89a5c]/20 outline-none transition-colors"
                   placeholder="Enter email address"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-[#1a2855] mb-1">Phone *</label>
+                <label htmlFor="phone" className="block text-sm font-semibold text-[#1a2855] mb-1">Phone *</label>
                 <input
                   type="tel"
+                  id="phone"
                   name="phone"
                   required
-                  className="w-full px-4 py-3 border-2 border-gray-200 focus:border-[#a89a5c] outline-none transition-colors"
+                  className="w-full px-4 py-3 border-2 border-gray-200 focus:border-[#a89a5c] focus:ring-2 focus:ring-[#a89a5c]/20 outline-none transition-colors"
                   placeholder="Enter phone number"
                 />
               </div>
 
               {programType === 'afterschool' && (
                 <div>
-                  <label className="block text-sm font-semibold text-[#1a2855] mb-1">Preferred Start Date</label>
+                  <label htmlFor="start_date" className="block text-sm font-semibold text-[#1a2855] mb-1">Preferred Start Date</label>
                   <input
                     type="date"
+                    id="start_date"
                     name="start_date"
-                    className="w-full px-4 py-3 border-2 border-gray-200 focus:border-[#a89a5c] outline-none transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-200 focus:border-[#a89a5c] focus:ring-2 focus:ring-[#a89a5c]/20 outline-none transition-colors"
                   />
                 </div>
               )}
 
               {programType === 'fitness' && (
                 <div>
-                  <label className="block text-sm font-semibold text-[#1a2855] mb-1">Preferred Day *</label>
+                  <label htmlFor="preferred_day" className="block text-sm font-semibold text-[#1a2855] mb-1">Preferred Day *</label>
                   <select
+                    id="preferred_day"
                     name="preferred_day"
                     required
-                    className="w-full px-4 py-3 border-2 border-gray-200 focus:border-[#a89a5c] outline-none transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-200 focus:border-[#a89a5c] focus:ring-2 focus:ring-[#a89a5c]/20 outline-none transition-colors"
                   >
                     <option value="">Select a day</option>
                     <option value="Saturday">Saturday</option>
@@ -183,11 +202,12 @@ export default function EnrollmentForm({ isOpen, onClose, programType }: Enrollm
               )}
 
               <div>
-                <label className="block text-sm font-semibold text-[#1a2855] mb-1">Additional Notes</label>
+                <label htmlFor="notes" className="block text-sm font-semibold text-[#1a2855] mb-1">Additional Notes</label>
                 <textarea
+                  id="notes"
                   name="notes"
                   rows={3}
-                  className="w-full px-4 py-3 border-2 border-gray-200 focus:border-[#a89a5c] outline-none transition-colors resize-none"
+                  className="w-full px-4 py-3 border-2 border-gray-200 focus:border-[#a89a5c] focus:ring-2 focus:ring-[#a89a5c]/20 outline-none transition-colors resize-none"
                   placeholder="Any additional information..."
                 />
               </div>

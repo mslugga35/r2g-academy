@@ -3,6 +3,8 @@ import { MetadataRoute } from 'next'
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://r2gacademy.com'
 
+  // Only include pages that actually exist
+  // Single-page site with anchor sections
   return [
     {
       url: baseUrl,
@@ -10,44 +12,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 1,
     },
+    // Anchor sections for better crawling hints
     {
-      url: `${baseUrl}/services/batting-cages`,
+      url: `${baseUrl}/#services`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/services/hitting-lessons`,
+      url: `${baseUrl}/#schedule`,
       lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.9,
+      changeFrequency: 'weekly',
+      priority: 0.8,
     },
     {
-      url: `${baseUrl}/services/pitching-training`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/services/team-training`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/services/softball-training`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/about`,
+      url: `${baseUrl}/#gallery`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/contact`,
+      url: `${baseUrl}/#contact`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
