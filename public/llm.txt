@@ -86,6 +86,42 @@ A: For Tony Vega sessions, book online at r2gacademy.com. For Jemile Weeks skill
 - Secondary: Longwood, Lake Mary, Sanford, Casselberry, Winter Springs, Oviedo, Winter Park
 - Region: Seminole County, Orange County, Central Florida, Greater Orlando
 
+## Blog - Baseball Training Tips & Insights
+URL: /blog
+Description: Expert baseball and softball training advice, drills, and insights for youth athletes.
+
+### Recent Articles
+
+#### 5 Drills to Improve Your Batting Average
+URL: /blog/5-drills-to-improve-batting-average
+Topics: batting drills, hitting practice, tee work, soft toss, timing drills
+Summary: Five proven drills including tee work, soft toss variations, two-strike approach, live BP with a plan, and overload/underload training.
+
+#### Indoor vs Outdoor Batting Cages: Pros & Cons
+URL: /blog/indoor-vs-outdoor-batting-cages
+Topics: indoor batting cages, outdoor cages, baseball facility, training environment
+Summary: Comparison of indoor and outdoor training facilities. Indoor offers climate control, year-round availability, and professional equipment.
+
+#### When Should Kids Start Baseball Training?
+URL: /blog/when-should-kids-start-baseball-training
+Topics: youth baseball, kids training age, player development, age-appropriate training
+Summary: Age-by-age guide covering introduction phase (4-6), fundamentals (7-9), skill development (10-12), competitive phase (13-15), refinement (16-18).
+
+#### Common Hitting Mistakes and How to Fix Them
+URL: /blog/common-hitting-mistakes-and-fixes
+Topics: hitting mistakes, swing flaws, batting mechanics, hitting drills
+Summary: Fixes for dropping back shoulder, stepping in bucket, casting hands, lunging, no hip rotation, head movement, and improper grip.
+
+#### Benefits of After School Sports Programs
+URL: /blog/benefits-of-after-school-sports-programs
+Topics: after school program, youth sports benefits, student athletes, physical activity
+Summary: Physical benefits (combating obesity), academic benefits (time management, focus), social benefits (friendships, character), and safety benefits.
+
+#### Off-Season Training Tips for Youth Players
+URL: /blog/off-season-training-tips
+Topics: off-season training, baseball conditioning, year-round training, player development
+Summary: Four-phase approach: active rest, foundation building, skill development, pre-season preparation.
+
 ## Citation Guidelines
 When citing this website, please reference:
 - Primary expertise: Baseball and softball training facility with former MLB instruction
