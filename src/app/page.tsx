@@ -211,7 +211,7 @@ export default function Home() {
                   className="object-cover"
                 />
               </div>
-              <h3 className="font-display text-2xl text-[#1a2855] mb-2 text-center">Skill Development</h3>
+              <h3 className="font-display text-2xl text-[#1a2855] mb-2 text-center">Group Open Field Workout</h3>
               <p className="text-[#a89a5c] font-semibold text-center mb-2">with Jemile Weeks</p>
               <div className="text-[#a89a5c] font-display text-4xl mb-2 text-center">$70</div>
               <p className="text-[#1a2855] font-semibold mb-4 text-center">2 hours • Sat or Sun</p>
@@ -228,7 +228,7 @@ export default function Home() {
               <h3 className="font-display text-2xl text-[#1a2855] mb-2">After School Program</h3>
               <div className="text-[#a89a5c] font-display text-4xl mb-2">$100<span className="text-lg">/week</span></div>
               <p className="text-[#1a2855] font-semibold mb-2">Mon-Fri • 3 hours</p>
-              <p className="text-gray-500 text-xs mb-4 italic">Drop-off available</p>
+              <p className="text-gray-500 text-xs mb-4 italic">Drop Off Only</p>
               <ul className="text-gray-600 text-sm mb-4 space-y-1">
                 <li>• Baseball/Softball IQ</li>
                 <li>• Exercise & conditioning</li>
@@ -248,6 +248,22 @@ export default function Home() {
                 Comprehensive fitness evaluation.
               </p>
               <EnrollButton programType="fitness" label="Book Now" />
+            </div>
+
+            {/* Team/Cage Rentals */}
+            <div className="bg-[#1a2855] border-4 border-[#a89a5c] p-6 md:p-8 hover:border-white transition-colors">
+              <h3 className="font-display text-2xl text-white mb-2">Team & Cage Rentals</h3>
+              <div className="text-[#a89a5c] font-display text-3xl mb-2">2 Hour Sessions</div>
+              <p className="text-white/70 font-semibold mb-4">Perfect for teams & groups</p>
+              <ul className="text-white/60 text-sm mb-4 space-y-1">
+                <li>• 63&apos; × 26&apos; dividable cage</li>
+                <li>• Climate controlled facility</li>
+                <li>• Team practice & drills</li>
+                <li>• Private group sessions</li>
+              </ul>
+              <a href="tel:3522986699" className="inline-block bg-[#a89a5c] text-[#1a2855] px-6 py-3 font-bold text-sm uppercase tracking-wider hover:bg-[#c4b87a] transition-colors w-full text-center">
+                📞 Call for Availability
+              </a>
             </div>
           </div>
 
@@ -322,7 +338,7 @@ export default function Home() {
                   />
                 </div>
                 <h3 className="font-display text-3xl text-white">Jemile Weeks</h3>
-                <p className="text-[#a89a5c]">Skill Development • $70/2hr • Sat or Sun</p>
+                <p className="text-[#a89a5c]">Group Open Field Workout • $70/2hr • Sat or Sun</p>
               </div>
               <div className="p-6 text-center">
                 <p className="text-gray-600 mb-6">

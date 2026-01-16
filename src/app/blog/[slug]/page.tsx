@@ -992,8 +992,9 @@ function markdownToHtml(markdown: string): string {
     .replace(/\n\n/g, '</p><p>')
     // Line breaks
     .replace(/\n/g, '<br>')
-    // Wrap in paragraph
-    .replace(/^(.+)$/s, '<p>$1</p>')
+    // Wrap in paragraph (prepend/append instead of regex with 's' flag)
+    .replace(/^/, '<p>')
+    .replace(/$/, '</p>')
     // Clean up empty paragraphs
     .replace(/<p><\/p>/g, '')
     .replace(/<p><br>/g, '<p>')

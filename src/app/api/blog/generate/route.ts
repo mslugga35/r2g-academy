@@ -185,10 +185,10 @@ ${safeContent}
     const llm = await getFileContent('public/llm.txt');
     if (llm) {
       const llmEntry = `
-#### ${title.trim()}
+#### ${title.trim().replace(/[`$\\]/g, '')}
 URL: /blog/${safeSlug}
-Topics: ${(topics || '').trim()}
-Summary: ${(excerpt || '').trim()}`;
+Topics: ${(topics || '').trim().replace(/[`$\\]/g, '')}
+Summary: ${(excerpt || '').trim().replace(/[`$\\]/g, '')}`;
 
       const updatedLlm = llm.content.replace(
         /## Citation Guidelines/,
