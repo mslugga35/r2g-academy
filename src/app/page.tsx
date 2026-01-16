@@ -252,6 +252,14 @@ export default function Home() {
 
             {/* Team/Cage Rentals */}
             <div className="bg-[#1a2855] border-4 border-[#a89a5c] p-6 md:p-8 hover:border-white transition-colors">
+              <div className="relative w-full h-32 mb-4 rounded overflow-hidden">
+                <Image
+                  src="/images/cages.jpg"
+                  alt="R2G Academy Batting Cages"
+                  fill
+                  className="object-cover"
+                />
+              </div>
               <h3 className="font-display text-2xl text-white mb-2">Team & Cage Rentals</h3>
               <div className="text-[#a89a5c] font-display text-3xl mb-2">2 Hour Sessions</div>
               <p className="text-white/70 font-semibold mb-4">Perfect for teams & groups</p>
@@ -261,8 +269,8 @@ export default function Home() {
                 <li>• Team practice & drills</li>
                 <li>• Private group sessions</li>
               </ul>
-              <a href="tel:3522986699" className="inline-block bg-[#a89a5c] text-[#1a2855] px-6 py-3 font-bold text-sm uppercase tracking-wider hover:bg-[#c4b87a] transition-colors w-full text-center">
-                📞 Call for Availability
+              <a href="https://cal.com/rodolfo-lizardo-tzrkyr/cages" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#a89a5c] text-[#1a2855] px-6 py-3 font-bold text-sm uppercase tracking-wider hover:bg-[#c4b87a] transition-colors w-full text-center">
+                Book Cage Time
               </a>
             </div>
           </div>
