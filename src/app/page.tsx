@@ -370,103 +370,24 @@ export default function Home() {
             <p className="text-gray-600 mt-4 text-lg">Champions in the making</p>
           </div>
 
-          {/* Full Gallery Grid - All 6 Photos */}
+          {/* Full Gallery Grid - Team Florida Photos */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Photo 1 - Team Florida */}
-            <div className="group relative overflow-hidden bg-white p-3 shadow-lg hover:shadow-2xl transition-shadow">
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <Image
-                  src="/images/team-florida-1.jpg"
-                  alt="Team Florida Athletes"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                />
+            {[1, 2, 3, 4, 5, 6].map((num) => (
+              <div key={num} className="group relative overflow-hidden bg-white p-3 shadow-lg hover:shadow-2xl transition-shadow">
+                <div className="relative aspect-[4/3] overflow-hidden">
+                  <Image
+                    src={`/images/team-florida-${num}.jpg`}
+                    alt={`Team Florida Training ${num}`}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="mt-3 pb-1">
+                  <div className="text-[#a89a5c] text-xs font-bold uppercase tracking-wider">Team Florida</div>
+                  <h3 className="font-display text-xl text-[#1a2855]">Youth Athletes</h3>
+                </div>
               </div>
-              <div className="mt-3 pb-1">
-                <div className="text-[#a89a5c] text-xs font-bold uppercase tracking-wider">Team Florida</div>
-                <h3 className="font-display text-xl text-[#1a2855]">Training Excellence</h3>
-              </div>
-            </div>
-
-            {/* Photo 2 - Team Florida */}
-            <div className="group relative overflow-hidden bg-white p-3 shadow-lg hover:shadow-2xl transition-shadow">
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <Image
-                  src="/images/team-florida-2.jpg"
-                  alt="Team Florida Training"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div className="mt-3 pb-1">
-                <div className="text-[#a89a5c] text-xs font-bold uppercase tracking-wider">Youth Development</div>
-                <h3 className="font-display text-xl text-[#1a2855]">Future Champions</h3>
-              </div>
-            </div>
-
-            {/* Photo 3 - All American Games */}
-            <div className="group relative overflow-hidden bg-white p-3 shadow-lg hover:shadow-2xl transition-shadow">
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <Image
-                  src="/images/original/IMG_6536.jpg"
-                  alt="USSSA All American Games"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div className="mt-3 pb-1">
-                <div className="text-[#a89a5c] text-xs font-bold uppercase tracking-wider">USSSA Softball</div>
-                <h3 className="font-display text-xl text-[#1a2855]">All American Games</h3>
-              </div>
-            </div>
-
-            {/* Photo 4 - Space Coast World Series */}
-            <div className="group relative overflow-hidden bg-white p-3 shadow-lg hover:shadow-2xl transition-shadow">
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <Image
-                  src="/images/original/facility-1.jpg"
-                  alt="Space Coast World Series"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div className="mt-3 pb-1">
-                <div className="text-[#a89a5c] text-xs font-bold uppercase tracking-wider">USSSA Champions</div>
-                <h3 className="font-display text-xl text-[#1a2855]">Space Coast World Series</h3>
-              </div>
-            </div>
-
-            {/* Photo 5 - PGF States */}
-            <div className="group relative overflow-hidden bg-white p-3 shadow-lg hover:shadow-2xl transition-shadow">
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <Image
-                  src="/images/original/facility-2.jpg"
-                  alt="PGF State Champions"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div className="mt-3 pb-1">
-                <div className="text-[#a89a5c] text-xs font-bold uppercase tracking-wider">PGF Softball</div>
-                <h3 className="font-display text-xl text-[#1a2855]">State Champions</h3>
-              </div>
-            </div>
-
-            {/* Photo 6 - Little League World Series */}
-            <div className="group relative overflow-hidden bg-white p-3 shadow-lg hover:shadow-2xl transition-shadow">
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <Image
-                  src="/images/original/IMG_1299.jpg"
-                  alt="Little League World Series Southeast"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div className="mt-3 pb-1">
-                <div className="text-[#a89a5c] text-xs font-bold uppercase tracking-wider">Little League</div>
-                <h3 className="font-display text-xl text-[#1a2855]">World Series Southeast</h3>
-              </div>
-            </div>
+            ))}
           </div>
 
           {/* CTA */}
