@@ -116,14 +116,14 @@ export default function Home() {
                   <div className="tape" />
                   <div className="relative w-full h-full overflow-hidden">
                     <Image
-                      src="/images/original/IMG_3022.jpg"
-                      alt="World Series Champions"
+                      src="/images/team-florida-7.jpg"
+                      alt="Team Florida Champions"
                       fill
                       className="object-cover"
                     />
                   </div>
                   <div className="absolute bottom-4 left-4 bg-[#a89a5c] text-white px-3 py-1 text-xs font-bold uppercase">
-                    2024 World Series Champs
+                    Team Florida Champions
                   </div>
                 </div>
               </div>
@@ -372,19 +372,26 @@ export default function Home() {
 
           {/* Full Gallery Grid - Team Florida Photos */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[1, 2, 3, 4, 5, 6].map((num) => (
-              <div key={num} className="group relative overflow-hidden bg-white p-3 shadow-lg hover:shadow-2xl transition-shadow">
+            {[
+              { img: 1, label: 'Team Practice', title: 'Building Skills Together' },
+              { img: 2, label: 'Game Day', title: 'Competition Ready' },
+              { img: 3, label: 'Training Session', title: 'Elite Development' },
+              { img: 4, label: 'Team Spirit', title: 'Championship Mindset' },
+              { img: 5, label: 'Youth Program', title: 'Future Stars' },
+              { img: 6, label: 'Skill Work', title: 'Perfecting the Craft' },
+            ].map((photo) => (
+              <div key={photo.img} className="group relative overflow-hidden bg-white p-3 shadow-lg hover:shadow-2xl transition-shadow">
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
-                    src={`/images/team-florida-${num}.jpg`}
-                    alt={`Team Florida Training ${num}`}
+                    src={`/images/team-florida-${photo.img}.jpg`}
+                    alt={photo.title}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="mt-3 pb-1">
-                  <div className="text-[#a89a5c] text-xs font-bold uppercase tracking-wider">Team Florida</div>
-                  <h3 className="font-display text-xl text-[#1a2855]">Youth Athletes</h3>
+                  <div className="text-[#a89a5c] text-xs font-bold uppercase tracking-wider">{photo.label}</div>
+                  <h3 className="font-display text-xl text-[#1a2855]">{photo.title}</h3>
                 </div>
               </div>
             ))}
