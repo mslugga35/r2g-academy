@@ -372,35 +372,35 @@ export default function Home() {
 
           {/* Full Gallery Grid - All 6 Photos */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Photo 1 - Cal Ripken World Series */}
+            {/* Photo 1 - Team Florida */}
             <div className="group relative overflow-hidden bg-white p-3 shadow-lg hover:shadow-2xl transition-shadow">
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
-                  src="/images/original/IMG_3024.jpg"
-                  alt="2024 Cal Ripken World Series Champions"
+                  src="/images/team-florida-1.jpg"
+                  alt="Team Florida Athletes"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="mt-3 pb-1">
-                <div className="text-[#a89a5c] text-xs font-bold uppercase tracking-wider">2024 Champions</div>
-                <h3 className="font-display text-xl text-[#1a2855]">Cal Ripken World Series</h3>
+                <div className="text-[#a89a5c] text-xs font-bold uppercase tracking-wider">Team Florida</div>
+                <h3 className="font-display text-xl text-[#1a2855]">Training Excellence</h3>
               </div>
             </div>
 
-            {/* Photo 2 - Ripken Celebration */}
+            {/* Photo 2 - Team Florida */}
             <div className="group relative overflow-hidden bg-white p-3 shadow-lg hover:shadow-2xl transition-shadow">
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
-                  src="/images/original/IMG_3022.jpg"
-                  alt="Ripken World Series Celebration"
+                  src="/images/team-florida-2.jpg"
+                  alt="Team Florida Training"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="mt-3 pb-1">
-                <div className="text-[#a89a5c] text-xs font-bold uppercase tracking-wider">Victory Celebration</div>
-                <h3 className="font-display text-xl text-[#1a2855]">Ripken World Series Trophy</h3>
+                <div className="text-[#a89a5c] text-xs font-bold uppercase tracking-wider">Youth Development</div>
+                <h3 className="font-display text-xl text-[#1a2855]">Future Champions</h3>
               </div>
             </div>
 
@@ -503,8 +503,8 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-[#1a1a1a] p-6 text-center">
               <div className="font-display text-5xl text-[#a89a5c] mb-2">2024</div>
-              <h3 className="font-display text-2xl text-white mb-2">Cal Ripken World Series</h3>
-              <p className="text-[#a89a5c] font-bold uppercase tracking-wider">Champions</p>
+              <h3 className="font-display text-2xl text-white mb-2">Team Florida</h3>
+              <p className="text-[#a89a5c] font-bold uppercase tracking-wider">Training Partners</p>
             </div>
 
             <div className="bg-[#1a1a1a] p-6 text-center">
