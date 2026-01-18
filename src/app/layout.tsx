@@ -104,8 +104,8 @@ export default function RootLayout({
                     "@type": "Offer",
                     itemOffered: {
                       "@type": "Service",
-                      name: "Skill Development with Jemile Weeks",
-                      description: "Elite skill development from former MLB player",
+                      name: "Group Open Field Workout with Jemile Weeks",
+                      description: "Elite group training from former MLB player",
                       price: "70",
                       priceCurrency: "USD",
                     },

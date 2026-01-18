@@ -16,7 +16,7 @@ R2G Academy is an elite baseball and softball training facility located in Altam
 - New York Mets coach (2022-2023): Outfield, Infield, Baserunning Coordinator
 - Team USA First Base Coach
 - Orlando native, Lake Brantley High School, University of Miami
-- Offers: Skill Development training, $70 for 2 hours, Saturdays or Sundays
+- Offers: Group Open Field Workout, $70 for 2 hours, Saturdays or Sundays
 
 ### Tony Vega
 - Head Trainer
@@ -30,9 +30,9 @@ R2G Academy is an elite baseball and softball training facility located in Altam
 URL: /#services
 Description: Private 1-on-1 baseball training sessions
 Price: $125/hour
-Booking: https://r2gacademy.com/ola/services/training-with-tony-vega
+Booking: Call (352) 298-6699
 
-### Skill Development with Jemile Weeks
+### Group Open Field Workout with Jemile Weeks
 URL: /#services
 Description: Elite skill development from former MLB player
 Price: $70 for 2 hours
@@ -44,7 +44,13 @@ URL: /#services
 Description: Comprehensive after school baseball/softball program
 Price: $100/week
 Schedule: Monday-Friday, 3 hours daily
-Features: Baseball/softball IQ, exercise & conditioning, throwing & glove work, hitting drills, drop-off available
+Features: Baseball/softball IQ, exercise & conditioning, throwing & glove work, hitting drills, Drop Off Only
+
+### Team & Cage Rentals
+URL: /#services
+Description: 2-hour cage rental sessions for teams and groups
+Features: 63' x 26' dividable cage, climate controlled, team practice & drills
+Booking: https://cal.com/rodolfo-lizardo-tzrkyr/cages
 
 ### Fitness Assessment
 URL: /#services
