@@ -542,10 +542,6 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="absolute -bottom-6 -left-6 bg-[#a89a5c] text-white p-6 shadow-xl">
-                <div className="font-display text-4xl">9-9</div>
-                <div className="text-sm uppercase tracking-wider opacity-80">Open Daily</div>
-              </div>
             </div>
           </div>
         </div>
