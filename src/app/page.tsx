@@ -305,70 +305,36 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Two Trainer Cards */}
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* Tony's Card */}
-            <div className="bg-white rounded-lg shadow-2xl overflow-hidden">
-              <div className="bg-[#1a2855] p-6 text-center">
-                <div className="relative w-24 h-24 mx-auto rounded-full overflow-hidden border-4 border-[#a89a5c] mb-4">
-                  <Image
-                    src="/images/tony.jpg"
-                    alt="Tony Vega"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <h3 className="font-display text-3xl text-white">Tony Vega</h3>
-                <p className="text-[#a89a5c]">1-on-1 Training • $125/hr</p>
-              </div>
-              <div className="p-6 text-center">
-                <p className="text-gray-600 mb-6">
-                  Elite one-on-one training sessions with experienced coaching. Build your skills with personalized attention.
-                </p>
-                <a
-                  href="tel:3522986699"
-                  className="inline-block bg-[#a89a5c] text-[#1a2855] px-8 py-4 font-bold uppercase tracking-wider hover:bg-[#c4b87a] transition-colors w-full"
-                >
-                  📞 Call to Book
-                </a>
+          {/* Hours & Contact */}
+          <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+            {/* Hours */}
+            <div className="bg-white/10 rounded-lg p-8 text-center">
+              <h3 className="font-display text-2xl text-[#a89a5c] mb-4">FACILITY HOURS</h3>
+              <div className="text-white space-y-2">
+                <p><span className="text-white/60">Mon - Fri:</span> 2 PM - 10 PM</p>
+                <p><span className="text-white/60">Sat - Sun:</span> By Appointment</p>
               </div>
             </div>
 
-            {/* Jemile's Card */}
-            <div className="bg-white rounded-lg shadow-2xl overflow-hidden">
-              <div className="bg-[#1a2855] p-6 text-center">
-                <div className="relative w-24 h-24 mx-auto rounded-full overflow-hidden border-4 border-[#a89a5c] mb-4">
-                  <Image
-                    src="/images/jemile.jpg"
-                    alt="Jemile Weeks"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <h3 className="font-display text-3xl text-white">Jemile Weeks</h3>
-                <p className="text-[#a89a5c]">Group Open Field Workout • $70/2hr • Sat or Sun</p>
-              </div>
-              <div className="p-6 text-center">
-                <p className="text-gray-600 mb-6">
-                  Former MLB player offering elite skill development training. Registration gives you day, time and location.
-                </p>
-                <a
-                  href="https://form.jotform.com/252495004595057"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-[#1a2855] text-white px-8 py-4 font-bold uppercase tracking-wider hover:bg-[#0f1a38] transition-colors w-full"
-                >
-                  Contact Jemile
-                </a>
-              </div>
+            {/* Contact */}
+            <div className="bg-white/10 rounded-lg p-8 text-center">
+              <h3 className="font-display text-2xl text-[#a89a5c] mb-4">CONTACT US</h3>
+              <a href="tel:3522986699" className="block text-white text-2xl font-bold hover:text-[#a89a5c] transition-colors mb-2">
+                (352) 298-6699
+              </a>
+              <a href="mailto:info@r2gacademy.com" className="text-white/60 hover:text-[#a89a5c] transition-colors">
+                info@r2gacademy.com
+              </a>
             </div>
           </div>
 
-          {/* Fallback contact */}
-          <div className="text-center mt-8">
-            <p className="text-white/60 mb-2">Prefer to call?</p>
-            <a href="tel:3522986699" className="text-[#a89a5c] text-2xl font-bold hover:text-[#c4b87a] transition-colors">
-              (352) 298-6699
+          {/* Quick booking links */}
+          <div className="flex flex-wrap justify-center gap-4 mt-8">
+            <a href="#services" className="bg-[#a89a5c] text-[#1a2855] px-8 py-4 font-bold uppercase tracking-wider hover:bg-[#c4b87a] transition-colors">
+              View All Programs
+            </a>
+            <a href="https://cal.com/rodolfo-lizardo-tzrkyr/cages" target="_blank" rel="noopener noreferrer" className="border-2 border-[#a89a5c] text-[#a89a5c] px-8 py-4 font-bold uppercase tracking-wider hover:bg-[#a89a5c] hover:text-[#1a2855] transition-colors">
+              Book Cage Rental
             </a>
           </div>
         </div>
