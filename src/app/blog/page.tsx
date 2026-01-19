@@ -5,6 +5,15 @@ import Link from 'next/link';
 
 const blogPosts = [
   {
+    slug: 'youth-baseball-footwork-fundamentals-speed-agility',
+    title: 'Building Athletic Foundation: Footwork Fundamentals That Transform Young Baseball and Softball Players',
+    excerpt: 'Proper footwork is the foundation of every successful play in baseball and softball, yet it\'s often overlooked in youth training. Master these essential footwork drills and techniques to help young athletes improve their base running, fielding positioning, and overall game performance.',
+    image: 'https://images.unsplash.com/photo-1471295253337-3ceaaedca402?w=800&q=80',
+    date: '2026-01-19',
+    readTime: '5 min read',
+    category: 'Training',
+  },
+  {
     slug: '5-drills-to-improve-batting-average',
     title: '5 Drills to Improve Your Batting Average',
     excerpt: 'Whether you\'re a beginner or advanced player, these proven drills will help you make better contact and drive the ball with more power.',
