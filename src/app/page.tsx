@@ -262,6 +262,9 @@ export default function Home() {
               </div>
               <h3 className="font-display text-2xl text-white mb-2">Team & Cage Rentals</h3>
               <div className="text-[#a89a5c] font-display text-3xl mb-2">2 Hour Sessions</div>
+              <div className="text-white/90 font-semibold mb-3 text-sm">
+                <span className="text-[#a89a5c]">Available Slots:</span> 3-5 PM • 5-7 PM • 7-9 PM
+              </div>
               <p className="text-white/70 font-semibold mb-4">Perfect for teams & groups</p>
               <ul className="text-white/60 text-sm mb-4 space-y-1">
                 <li>• 63&apos; × 26&apos; dividable cage</li>
