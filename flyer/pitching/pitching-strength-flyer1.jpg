@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>R2G Academy - Speed & Strength Training</title>
+    <title>R2G Academy - Pitching Strength & Arm Care</title>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
         * {
@@ -37,9 +37,9 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('2843382718228483960.jpg.jpeg') center center;
+            background: url('Pitching Strength and Arm Care Sundays.jpg') center center;
             background-size: cover;
-            opacity: 0.15;
+            opacity: 0.12;
         }
 
         .gold-accent-top {
@@ -66,7 +66,7 @@
             height: 100%;
             display: flex;
             flex-direction: column;
-            padding: 30px 50px;
+            padding: 25px 50px 20px;
         }
 
         .header {
@@ -76,7 +76,7 @@
 
         .logo {
             width: 140px;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             filter: drop-shadow(0 4px 15px rgba(0,0,0,0.5));
         }
 
@@ -85,22 +85,22 @@
             font-size: 72px;
             color: white;
             text-transform: uppercase;
-            letter-spacing: 6px;
+            letter-spacing: 5px;
             line-height: 0.95;
             text-shadow: 3px 3px 0 #a89a5c, 6px 6px 20px rgba(0,0,0,0.5);
         }
 
         .subtitle {
             font-family: 'Bebas Neue', sans-serif;
-            font-size: 38px;
+            font-size: 48px;
             color: #a89a5c;
             letter-spacing: 8px;
-            margin-top: 5px;
+            margin-top: 3px;
         }
 
         .day-banner {
             background: linear-gradient(90deg, transparent, #a89a5c, transparent);
-            padding: 12px 0;
+            padding: 10px 0;
             margin: 15px 0;
             text-align: center;
         }
@@ -113,45 +113,71 @@
             text-transform: uppercase;
         }
 
-        .age-group {
+        .includes-section {
             text-align: center;
             margin: 10px 0 15px;
         }
 
-        .age-text {
+        .includes-title {
             font-family: 'Bebas Neue', sans-serif;
-            font-size: 36px;
+            font-size: 24px;
+            color: #a89a5c;
+            letter-spacing: 6px;
+            margin-bottom: 10px;
+        }
+
+        .includes-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px 25px;
+        }
+
+        .includes-item {
+            font-size: 18px;
+            font-weight: 600;
             color: white;
-            letter-spacing: 4px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .includes-item::before {
+            content: "✓";
+            color: #a89a5c;
+            font-weight: 800;
+            font-size: 20px;
         }
 
         .sessions {
             display: flex;
             justify-content: center;
-            gap: 30px;
+            gap: 25px;
             margin: 15px 0;
+            flex: 1;
+            align-items: center;
         }
 
         .session-card {
             background: rgba(255,255,255,0.08);
             border: 3px solid #a89a5c;
             border-radius: 15px;
-            padding: 20px 30px;
+            padding: 22px 30px;
             width: 260px;
             text-align: center;
             backdrop-filter: blur(10px);
         }
 
-        .session-gender {
+        .session-label {
             font-family: 'Bebas Neue', sans-serif;
-            font-size: 42px;
+            font-size: 40px;
             color: #a89a5c;
             letter-spacing: 4px;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .session-time {
-            font-size: 22px;
+            font-size: 24px;
             font-weight: 700;
             color: white;
             margin-bottom: 10px;
@@ -159,38 +185,38 @@
 
         .session-price {
             font-family: 'Bebas Neue', sans-serif;
-            font-size: 40px;
+            font-size: 48px;
             color: white;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
 
         .session-price span {
             font-family: 'Barlow', sans-serif;
-            font-size: 18px;
+            font-size: 16px;
             color: #a89a5c;
         }
 
         .session-limit {
-            font-size: 16px;
+            font-size: 14px;
             color: #a89a5c;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 2px;
-            padding-top: 10px;
+            padding-top: 8px;
             border-top: 1px solid rgba(168, 154, 92, 0.3);
         }
 
         .contact-section {
             background: rgba(168, 154, 92, 0.15);
             border-top: 2px solid #a89a5c;
-            padding: 15px;
+            padding: 18px;
             text-align: center;
             margin-top: auto;
         }
 
         .contact-title {
             font-family: 'Bebas Neue', sans-serif;
-            font-size: 24px;
+            font-size: 22px;
             color: #a89a5c;
             letter-spacing: 4px;
             margin-bottom: 10px;
@@ -199,58 +225,26 @@
         .contact-info {
             display: flex;
             justify-content: center;
-            gap: 50px;
+            gap: 40px;
             flex-wrap: wrap;
         }
 
         .contact-item {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
         }
 
         .contact-icon {
-            width: 28px;
-            height: 28px;
+            width: 22px;
+            height: 22px;
             fill: #a89a5c;
         }
 
         .contact-text {
-            font-size: 22px;
+            font-size: 18px;
             font-weight: 600;
             color: white;
-        }
-
-        .qr-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-
-        .qr-code {
-            width: 140px;
-            height: 140px;
-            background: white;
-            padding: 8px;
-            border-radius: 10px;
-        }
-
-        .qr-url {
-            font-size: 14px;
-            color: white;
-            margin-top: 8px;
-            letter-spacing: 1px;
-        }
-
-        .decorative-lines {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, rgba(168, 154, 92, 0.2), transparent);
-            transform: translateY(-50%);
         }
 
         @media print {
@@ -282,29 +276,35 @@
 
         <div class="content">
             <div class="header">
-                <img src="../public/images/r2glogo.png" alt="R2G Academy" class="logo">
-                <h1 class="main-title">Speed & Strength</h1>
-                <p class="subtitle">Training Program</p>
+                <img src="../../public/images/r2glogo.png" alt="R2G Academy" class="logo">
+                <h1 class="main-title">Pitching Strength</h1>
+                <p class="subtitle">& Arm Care</p>
             </div>
 
             <div class="day-banner">
-                <div class="day-text">Every Saturday</div>
+                <div class="day-text">Every Sunday</div>
             </div>
 
-            <div class="age-group">
-                <div class="age-text">Ages 13-14 Year Olds</div>
+            <div class="includes-section">
+                <div class="includes-title">Program Includes</div>
+                <div class="includes-list">
+                    <div class="includes-item">Core Work</div>
+                    <div class="includes-item">Leg Strength</div>
+                    <div class="includes-item">Back Strength</div>
+                    <div class="includes-item">Shoulder & Arm Care</div>
+                </div>
             </div>
 
             <div class="sessions">
                 <div class="session-card">
-                    <div class="session-gender">Girls</div>
+                    <div class="session-label">Session 1</div>
                     <div class="session-time">10:00 - 11:30 AM</div>
                     <div class="session-price">$30 <span>/ session</span></div>
                     <div class="session-limit">10 Athletes Max</div>
                 </div>
 
                 <div class="session-card">
-                    <div class="session-gender">Boys</div>
+                    <div class="session-label">Session 2</div>
                     <div class="session-time">12:00 - 1:30 PM</div>
                     <div class="session-price">$30 <span>/ session</span></div>
                     <div class="session-limit">10 Athletes Max</div>
@@ -312,12 +312,8 @@
             </div>
 
             <div class="contact-section">
-                <div class="contact-title">Scan to Register</div>
-                <div class="qr-container">
-                    <img src="speed-strength-qr.png" alt="Scan to Register" class="qr-code">
-                    <div class="qr-url">r2gacademy.com/speed-strength-register</div>
-                </div>
-                <div class="contact-info" style="margin-top: 20px;">
+                <div class="contact-title">For More Information</div>
+                <div class="contact-info">
                     <div class="contact-item">
                         <svg class="contact-icon" viewBox="0 0 24 24">
                             <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
@@ -328,7 +324,7 @@
                         <svg class="contact-icon" viewBox="0 0 24 24">
                             <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                         </svg>
-                        <span class="contact-text">r2gacademy@gmail.com</span>
+                        <span class="contact-text">info@r2gacademy.com</span>
                     </div>
                 </div>
             </div>
