@@ -5,6 +5,15 @@ import Link from 'next/link';
 
 const blogPosts = [
   {
+    slug: 'mental-game-tips-young-baseball-softball-players',
+    title: 'Building Mental Toughness: 7 Ways to Strengthen Your Young Athlete\'s Mental Game',
+    excerpt: 'While physical skills are crucial, the mental side of baseball and softball often determines success on the field. Learn proven strategies to help your young athlete develop confidence, focus, and resilience that will elevate their game.',
+    image: 'https://images.unsplash.com/photo-1471295253337-3ceaaedca402?w=800&q=80',
+    date: '2026-02-02',
+    readTime: '5 min read',
+    category: 'Youth Development',
+  },
+  {
     slug: 'youth-baseball-footwork-fundamentals-speed-agility',
     title: 'Building Athletic Foundation: Footwork Fundamentals That Transform Young Baseball and Softball Players',
     excerpt: 'Proper footwork is the foundation of every successful play in baseball and softball, yet it\'s often overlooked in youth training. Master these essential footwork drills and techniques to help young athletes improve their base running, fielding positioning, and overall game performance.',
