@@ -174,83 +174,18 @@ export default function Home() {
             </p>
           </div>
 
+          {/*
+            PROGRAM CARDS - Display Order (Updated Feb 2026):
+            1. Cage Rentals - Primary revenue driver, always first
+            2. Jemile Weeks - Group workouts
+            3. After School - Recurring program
+            4. Fitness Assessment - Weekend only
+            5. Tony Vega - Last (unavailable during daughter's senior season)
+
+            To reorder: Move entire card div blocks. Each card is self-contained.
+          */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Training with Tony */}
-            <div className="bg-[#1a2855] p-6 md:p-8 relative overflow-hidden group">
-              <div className="absolute top-0 right-0 bg-[#a89a5c] text-[#1a1a1a] px-3 py-1 text-xs font-bold uppercase">
-                Featured
-              </div>
-              {/* Tony's Photo */}
-              <div className="relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-[#a89a5c]">
-                <Image
-                  src="/images/tony.jpg"
-                  alt="Tony Vega"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <h3 className="font-display text-3xl text-white mb-2 text-center">Training with Tony Vega</h3>
-              <div className="text-[#a89a5c] font-display text-4xl mb-2 text-center">$125</div>
-              <p className="text-white/70 mb-4 text-center">1 hour session</p>
-              <p className="text-white/60 text-sm mb-6 text-center">
-                One-on-one elite training with experienced coaching.
-              </p>
-              <a href="tel:3522986699" className="inline-block bg-[#a89a5c] text-[#1a2855] px-6 py-3 font-bold text-sm uppercase tracking-wider hover:bg-[#c4b87a] transition-colors w-full text-center">
-                📞 Call to Book
-              </a>
-            </div>
-
-            {/* Skill Development - Jemile */}
-            <div className="bg-white border-4 border-[#1a2855] p-6 md:p-8 hover:border-[#a89a5c] transition-colors">
-              {/* Jemile's Photo */}
-              <div className="relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-[#1a2855]">
-                <Image
-                  src="/images/jemile.jpg"
-                  alt="Jemile Weeks"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <h3 className="font-display text-2xl text-[#1a2855] mb-2 text-center">Group Open Field Workout</h3>
-              <p className="text-[#a89a5c] font-semibold text-center mb-2">with Jemile Weeks</p>
-              <div className="text-[#a89a5c] font-display text-4xl mb-2 text-center">$70</div>
-              <p className="text-[#1a2855] font-semibold mb-4 text-center">2 hours • Sat or Sun</p>
-              <p className="text-gray-600 text-sm mb-4 text-center">
-                Registration gives you day, time and location.
-              </p>
-              <a href="https://form.jotform.com/252495004595057" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#1a2855] text-white px-6 py-3 font-bold text-sm uppercase tracking-wider hover:bg-[#0f1a38] transition-colors w-full text-center">
-                Register Now
-              </a>
-            </div>
-
-            {/* After School */}
-            <div className="bg-white border-4 border-[#1a2855] p-6 md:p-8 hover:border-[#a89a5c] transition-colors">
-              <h3 className="font-display text-2xl text-[#1a2855] mb-2">After School Program</h3>
-              <div className="text-[#a89a5c] font-display text-4xl mb-2">$100<span className="text-lg">/week</span></div>
-              <p className="text-[#1a2855] font-semibold mb-2">Mon-Fri • 3 hours</p>
-              <p className="text-gray-500 text-xs mb-4 italic">Drop Off Only</p>
-              <ul className="text-gray-600 text-sm mb-4 space-y-1">
-                <li>• Baseball/Softball IQ</li>
-                <li>• Exercise & conditioning</li>
-                <li>• Throwing & glove work</li>
-                <li>• Hitting drills</li>
-              </ul>
-              <EnrollButton programType="afterschool" label="Enroll Now" />
-            </div>
-
-            {/* Fitness Assessment */}
-            <div className="bg-white border-4 border-[#1a2855] p-6 md:p-8 hover:border-[#a89a5c] transition-colors">
-              <h3 className="font-display text-2xl text-[#1a2855] mb-2">Fitness Assessment</h3>
-              <div className="text-[#a89a5c] font-display text-4xl mb-2">$75</div>
-              <p className="text-[#1a2855] font-semibold mb-4">45 min • Sat & Sun Only</p>
-              <p className="text-gray-600 text-sm mb-4">
-                Ages 12-15 boys and girls.<br/>
-                Comprehensive fitness evaluation.
-              </p>
-              <EnrollButton programType="fitness" label="Book Now" />
-            </div>
-
-            {/* Team/Cage Rentals */}
+            {/* 1. Team/Cage Rentals */}
             <div className="bg-[#1a2855] border-4 border-[#a89a5c] p-6 md:p-8 hover:border-white transition-colors">
               <div className="relative w-full h-32 mb-4 rounded overflow-hidden">
                 <Image
@@ -277,6 +212,78 @@ export default function Home() {
               </ul>
               <a href="https://cal.com/rodolfo-lizardo-tzrkyr/cages" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#a89a5c] text-[#1a2855] px-6 py-3 font-bold text-sm uppercase tracking-wider hover:bg-[#c4b87a] transition-colors w-full text-center">
                 Book Cage Time
+              </a>
+            </div>
+
+            {/* 2. Jemile Weeks - Group Workouts */}
+            <div className="bg-white border-4 border-[#1a2855] p-6 md:p-8 hover:border-[#a89a5c] transition-colors">
+              {/* Jemile's Photo */}
+              <div className="relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-[#1a2855]">
+                <Image
+                  src="/images/jemile.jpg"
+                  alt="Jemile Weeks"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <h3 className="font-display text-2xl text-[#1a2855] mb-2 text-center">Group Open Field Workout</h3>
+              <p className="text-[#a89a5c] font-semibold text-center mb-2">with Jemile Weeks</p>
+              <div className="text-[#a89a5c] font-display text-4xl mb-2 text-center">$70</div>
+              <p className="text-[#1a2855] font-semibold mb-4 text-center">2 hours • Sat or Sun</p>
+              <p className="text-gray-600 text-sm mb-4 text-center">
+                Registration gives you day, time and location.
+              </p>
+              <a href="https://form.jotform.com/252495004595057" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#1a2855] text-white px-6 py-3 font-bold text-sm uppercase tracking-wider hover:bg-[#0f1a38] transition-colors w-full text-center">
+                Register Now
+              </a>
+            </div>
+
+            {/* 3. After School Program */}
+            <div className="bg-white border-4 border-[#1a2855] p-6 md:p-8 hover:border-[#a89a5c] transition-colors">
+              <h3 className="font-display text-2xl text-[#1a2855] mb-2">After School Program</h3>
+              <div className="text-[#a89a5c] font-display text-4xl mb-2">$100<span className="text-lg">/week</span></div>
+              <p className="text-[#1a2855] font-semibold mb-2">Mon-Fri • 3 hours</p>
+              <p className="text-gray-500 text-xs mb-4 italic">Drop Off Only</p>
+              <ul className="text-gray-600 text-sm mb-4 space-y-1">
+                <li>• Baseball/Softball IQ</li>
+                <li>• Exercise & conditioning</li>
+                <li>• Throwing & glove work</li>
+                <li>• Hitting drills</li>
+              </ul>
+              <EnrollButton programType="afterschool" label="Enroll Now" />
+            </div>
+
+            {/* 4. Fitness Assessment */}
+            <div className="bg-white border-4 border-[#1a2855] p-6 md:p-8 hover:border-[#a89a5c] transition-colors">
+              <h3 className="font-display text-2xl text-[#1a2855] mb-2">Fitness Assessment</h3>
+              <div className="text-[#a89a5c] font-display text-4xl mb-2">$75</div>
+              <p className="text-[#1a2855] font-semibold mb-4">45 min • Sat & Sun Only</p>
+              <p className="text-gray-600 text-sm mb-4">
+                Ages 12-15 boys and girls.<br/>
+                Comprehensive fitness evaluation.
+              </p>
+              <EnrollButton programType="fitness" label="Book Now" />
+            </div>
+
+            {/* 5. Tony Vega - Private Training (last per business request) */}
+            <div className="bg-[#1a2855] p-6 md:p-8 relative overflow-hidden group">
+              {/* Tony's Photo */}
+              <div className="relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-[#a89a5c]">
+                <Image
+                  src="/images/tony.jpg"
+                  alt="Tony Vega"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <h3 className="font-display text-3xl text-white mb-2 text-center">Training with Tony Vega</h3>
+              <div className="text-[#a89a5c] font-display text-4xl mb-2 text-center">$125</div>
+              <p className="text-white/70 mb-4 text-center">1 hour session</p>
+              <p className="text-white/60 text-sm mb-6 text-center">
+                One-on-one elite training with experienced coaching.
+              </p>
+              <a href="tel:3522986699" className="inline-block bg-[#a89a5c] text-[#1a2855] px-6 py-3 font-bold text-sm uppercase tracking-wider hover:bg-[#c4b87a] transition-colors w-full text-center">
+                📞 Call to Book
               </a>
             </div>
           </div>
