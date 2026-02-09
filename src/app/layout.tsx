@@ -1,16 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "R2G Academy | Baseball Training with MLB Pro Jemile Weeks | Altamonte Springs FL",
@@ -94,9 +83,9 @@ export default function RootLayout({
                     "@type": "Offer",
                     itemOffered: {
                       "@type": "Service",
-                      name: "Training with Tony Vega",
-                      description: "Private 1-on-1 baseball training",
-                      price: "125",
+                      name: "Team & Cage Rentals",
+                      description: "2-hour team training in 63' x 26' dividable indoor batting cage with climate control",
+                      price: "250",
                       priceCurrency: "USD",
                     },
                   },
@@ -127,6 +116,16 @@ export default function RootLayout({
                       name: "Fitness Assessment",
                       description: "Comprehensive fitness evaluation for ages 12-15",
                       price: "75",
+                      priceCurrency: "USD",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Training with Tony Vega",
+                      description: "Private 1-on-1 baseball training",
+                      price: "125",
                       priceCurrency: "USD",
                     },
                   },
@@ -197,7 +196,7 @@ export default function RootLayout({
                   name: "What are the prices for baseball training at R2G Academy?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "R2G Academy offers: Training with Tony Vega at $125/hour for private sessions, Skill Development with Jemile Weeks at $70 for 2 hours, After School Program at $100/week (Monday-Friday), and Fitness Assessment at $75 for 45 minutes.",
+                    text: "R2G Academy offers: Team & Cage Rentals at $250 for a 2-hour session in our 63' x 26' dividable indoor cage (use code KICKOFF50 for $50 off), Group Open Field Workout with Jemile Weeks at $70 for 2 hours, After School Program at $100/week (Monday-Friday), Fitness Assessment at $75 for 45 minutes, and Private Training with Tony Vega at $125/hour.",
                   },
                 },
                 {
@@ -229,7 +228,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className="antialiased">
         {children}
       </body>
     </html>

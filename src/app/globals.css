@@ -1,24 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
+/* ── Design tokens ─────────────────────────────────────── */
 :root {
   --navy: #1a2855;
-  --navy-dark: #0f1a38;
   --gold: #a89a5c;
-  --gold-light: #c4b87a;
-  --gold-dark: #8b8344;
   --cream: #f5f2eb;
-  --charcoal: #1a1a1a;
-  --gray: #6b7280;
 }
 
-* {
-  box-sizing: border-box;
-}
+/* ── Base ───────────────────────────────────────────────── */
+* { box-sizing: border-box; }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   font-family: 'Barlow', sans-serif;
@@ -27,29 +20,23 @@ body {
   overflow-x: hidden;
 }
 
-/* Accessibility: Focus visible styles */
 :focus-visible {
   outline: 2px solid var(--gold);
   outline-offset: 2px;
 }
 
-/* Skip to main content link */
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background: var(--navy);
-  color: white;
-  padding: 8px 16px;
-  z-index: 100;
-  transition: top 0.3s;
+::selection {
+  background: var(--gold);
+  color: var(--navy);
 }
 
-.skip-link:focus {
-  top: 0;
+/* ── Typography ─────────────────────────────────────────── */
+.font-display {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.02em;
 }
 
-/* Grain texture overlay */
+/* ── Decorative overlays ────────────────────────────────── */
 .grain {
   position: fixed;
   top: 0;
@@ -62,35 +49,15 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
 }
 
-/* Diagonal clip paths */
-.diagonal-cut {
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+.halftone {
+  background-image: radial-gradient(circle, var(--navy) 1px, transparent 1px);
+  background-size: 4px 4px;
 }
 
-.diagonal-cut-reverse {
-  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
-}
+/* ── Photo frame styles (used in hero + about sections) ── */
+.photo-tilt-left  { transform: rotate(-3deg); }
+.photo-tilt-right { transform: rotate(3deg); }
 
-/* Headline font */
-.font-display {
-  font-family: 'Bebas Neue', sans-serif;
-  letter-spacing: 0.02em;
-}
-
-/* Photo frame styles */
-.photo-tilt-left {
-  transform: rotate(-3deg);
-}
-
-.photo-tilt-right {
-  transform: rotate(3deg);
-}
-
-.photo-tilt-slight {
-  transform: rotate(-1.5deg);
-}
-
-/* Tape effect */
 .tape {
   position: absolute;
   width: 60px;
@@ -102,93 +69,25 @@ body {
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
-/* Staggered animations */
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
+/* ── Animations ─────────────────────────────────────────── */
 @keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from { opacity: 0; transform: translateX(-30px); }
+  to   { opacity: 1; transform: translateX(0); }
 }
 
 @keyframes scaleIn {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+  from { opacity: 0; transform: scale(0.9); }
+  to   { opacity: 1; transform: scale(1); }
 }
 
-.animate-slide-up {
-  animation: slideUp 0.8s ease-out forwards;
-}
+.animate-slide-in { animation: slideIn 0.6s ease-out forwards; }
+.animate-scale-in { animation: scaleIn 0.7s ease-out forwards; }
 
-.animate-slide-in {
-  animation: slideIn 0.6s ease-out forwards;
-}
-
-.animate-fade-in {
-  animation: fadeIn 1s ease-out forwards;
-}
-
-.animate-scale-in {
-  animation: scaleIn 0.7s ease-out forwards;
-}
-
-.delay-100 { animation-delay: 0.1s; opacity: 0; }
 .delay-200 { animation-delay: 0.2s; opacity: 0; }
-.delay-300 { animation-delay: 0.3s; opacity: 0; }
 .delay-400 { animation-delay: 0.4s; opacity: 0; }
-.delay-500 { animation-delay: 0.5s; opacity: 0; }
-.delay-600 { animation-delay: 0.6s; opacity: 0; }
 
-/* Halftone pattern */
-.halftone {
-  background-image: radial-gradient(circle, var(--navy) 1px, transparent 1px);
-  background-size: 4px 4px;
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--cream);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--navy);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--gold);
-}
-
-/* Selection */
-::selection {
-  background: var(--gold);
-  color: var(--navy);
-}
+/* ── Scrollbar ──────────────────────────────────────────── */
+::-webkit-scrollbar       { width: 10px; }
+::-webkit-scrollbar-track { background: var(--cream); }
+::-webkit-scrollbar-thumb { background: var(--navy); }
+::-webkit-scrollbar-thumb:hover { background: var(--gold); }
