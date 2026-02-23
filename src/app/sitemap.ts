@@ -4,6 +4,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://r2gacademy.com'
 
   const blogPosts = [
+    'building-confidence-young-baseball-softball-players',
     'building-mental-toughness-youth-baseball-softball-players',
     'mental-game-tips-young-baseball-softball-players',
     'youth-baseball-footwork-fundamentals-speed-agility',
