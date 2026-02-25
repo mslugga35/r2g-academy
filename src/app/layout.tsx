@@ -83,8 +83,8 @@ export default function RootLayout({
                     "@type": "Offer",
                     itemOffered: {
                       "@type": "Service",
-                      name: "Team & Cage Rentals",
-                      description: "2-hour team training in 63' x 26' dividable indoor batting cage with climate control",
+                      name: "Cage Rentals",
+                      description: "Team rentals (2-hour sessions) and single cage batting practice in 63' x 26' dividable indoor batting cage with climate control",
                       price: "250",
                       priceCurrency: "USD",
                     },
@@ -124,7 +124,7 @@ export default function RootLayout({
                     itemOffered: {
                       "@type": "Service",
                       name: "Training with Tony Vega",
-                      description: "Private 1-on-1 baseball training",
+                      description: "Private 1-on-1 baseball training with former Duke coach",
                       price: "125",
                       priceCurrency: "USD",
                     },
@@ -196,7 +196,7 @@ export default function RootLayout({
                   name: "What are the prices for baseball training at R2G Academy?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "R2G Academy offers: Team & Cage Rentals at $250 for a 2-hour session in our 63' x 26' dividable indoor cage (use code KICKOFF50 for $50 off), Group Open Field Workout with Jemile Weeks at $70 for 2 hours, After School Program at $100/week (Monday-Friday), Fitness Assessment at $75 for 45 minutes, and Private Training with Tony Vega at $125/hour.",
+                    text: "R2G Academy offers: Cage Rentals — team sessions at $250 for 2 hours and single cage batting practice (use code KICKOFF50 for $50 off team rentals), Group Open Field Workout with ex-MLB Player Jemile Weeks at $70 for 2 hours, After School Program at $100/week (Monday-Friday), Fitness Assessment at $75 for 45 minutes, and Private Training with Former Duke Coach Tony Vega at $125/hour.",
                   },
                 },
                 {

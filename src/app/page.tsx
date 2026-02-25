@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import EnrollButton from "./components/EnrollButton";
 
 export default function Home() {
@@ -23,11 +24,11 @@ export default function Home() {
             </a>
             <div className="hidden md:flex items-center gap-8">
               <a href="#services" className="text-white/80 hover:text-[#a89a5c] font-semibold text-sm uppercase tracking-wider transition-colors">Programs</a>
-              <a href="#schedule" className="text-white/80 hover:text-[#a89a5c] font-semibold text-sm uppercase tracking-wider transition-colors">Schedule</a>
+              <a href="#wins" className="text-white/80 hover:text-[#a89a5c] font-semibold text-sm uppercase tracking-wider transition-colors">Results</a>
               <a href="#gallery" className="text-white/80 hover:text-[#a89a5c] font-semibold text-sm uppercase tracking-wider transition-colors">Gallery</a>
-              <a href="/blog" className="text-white/80 hover:text-[#a89a5c] font-semibold text-sm uppercase tracking-wider transition-colors">Blog</a>
+              <Link href="/blog" className="text-white/80 hover:text-[#a89a5c] font-semibold text-sm uppercase tracking-wider transition-colors">Blog</Link>
               <a href="#contact" className="text-white/80 hover:text-[#a89a5c] font-semibold text-sm uppercase tracking-wider transition-colors">Contact</a>
-              <a href="#schedule" className="bg-[#a89a5c] text-[#1a2855] px-5 py-2 font-bold text-sm uppercase tracking-wider hover:bg-[#c4b87a] transition-colors">
+              <a href="#services" className="bg-[#a89a5c] text-[#1a2855] px-5 py-2 font-bold text-sm uppercase tracking-wider hover:bg-[#c4b87a] transition-colors">
                 Book Now
               </a>
             </div>
@@ -60,6 +61,11 @@ export default function Home() {
                 $50 OFF Team Training • Code: KICKOFF50
               </div>
 
+              {/* Clear facility descriptor */}
+              <div className="text-white/60 text-sm font-bold uppercase tracking-[0.2em] mb-4">
+                Elite Athletic Training Facility
+              </div>
+
               <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-white leading-[0.9] mb-6">
                 FROM CONCRETE<br/>
                 <span className="text-[#a89a5c]">TO</span><br/>
@@ -67,12 +73,12 @@ export default function Home() {
               </h1>
 
               <p className="text-white/70 text-lg md:text-xl max-w-lg mb-8 font-medium leading-relaxed">
-                63&apos; × 26&apos; dividable cage. Precision bullpen. Evidence-based coaching.
-                Seminole County&apos;s home for champions.
+                Seminole County&apos;s premier indoor baseball &amp; softball training center.
+                63&apos; × 26&apos; dividable cage, precision bullpen, and evidence-based coaching.
               </p>
 
               <div className="flex flex-wrap gap-4">
-                <a href="#schedule" className="group bg-[#a89a5c] text-[#1a2855] px-8 py-4 font-bold uppercase tracking-wider hover:bg-[#c4b87a] transition-all duration-300">
+                <a href="#services" className="group bg-[#a89a5c] text-[#1a2855] px-8 py-4 font-bold uppercase tracking-wider hover:bg-[#c4b87a] transition-all duration-300">
                   Book a Session
                   <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
                 </a>
@@ -167,25 +173,9 @@ export default function Home() {
             </h2>
           </div>
 
-          {/* Facility Hours Banner */}
-          <div className="mb-8 bg-[#1a2855] p-4 text-center">
-            <p className="text-white font-semibold">
-              <span className="text-[#a89a5c]">Facility Hours:</span> Mon-Fri 2-10 PM • Sat/Sun Appointment Only
-            </p>
-          </div>
-
-          {/*
-            PROGRAM CARDS - Display Order (Updated Feb 2026):
-            1. Cage Rentals - Primary revenue driver, always first
-            2. Jemile Weeks - Group workouts
-            3. After School - Recurring program
-            4. Fitness Assessment - Weekend only
-            5. Tony Vega - Last (unavailable during daughter's senior season)
-
-            To reorder: Move entire card div blocks. Each card is self-contained.
-          */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* 1. Team/Cage Rentals */}
+          {/* Row 1: Session-based offerings (3 across) */}
+          <div className="grid md:grid-cols-3 gap-6 mb-6">
+            {/* 1. Cage Rentals — Team + Single options */}
             <div className="bg-[#1a2855] border-4 border-[#a89a5c] p-6 md:p-8 hover:border-white transition-colors">
               <div className="relative w-full h-32 mb-4 rounded overflow-hidden">
                 <Image
@@ -195,20 +185,30 @@ export default function Home() {
                   className="object-cover"
                 />
               </div>
-              <h3 className="font-display text-2xl text-white mb-2">Team & Cage Rentals</h3>
-              <div className="text-[#a89a5c] font-display text-4xl mb-1">$250</div>
-              <p className="text-white/80 font-semibold mb-2">2 Hour Session</p>
-              <div className="text-white/90 font-semibold mb-3 text-sm">
-                <span className="text-[#a89a5c]">Available Slots:</span> 3-5 PM • 5-7 PM • 7-9 PM
+              <h3 className="font-display text-2xl text-white mb-4">Cage Rentals</h3>
+
+              {/* Team Rental */}
+              <div className="border-b border-white/20 pb-3 mb-3">
+                <p className="text-white font-semibold text-sm uppercase tracking-wider mb-1">Team Rental</p>
+                <div className="text-[#a89a5c] font-display text-4xl mb-1">$250</div>
+                <p className="text-white/80 font-semibold text-sm">2 Hour Session</p>
+                <div className="text-white/90 font-semibold text-xs mt-1">
+                  <span className="text-[#a89a5c]">Slots:</span> 3-5 PM • 5-7 PM • 7-9 PM
+                </div>
               </div>
+
+              {/* Single Cage */}
+              <div className="pb-3 mb-3">
+                <p className="text-white font-semibold text-sm uppercase tracking-wider mb-1">Single Cage</p>
+                <p className="text-white/70 text-sm">1-hour batting practice sessions available</p>
+              </div>
+
               <div className="bg-[#a89a5c]/20 border border-[#a89a5c] rounded px-3 py-2 mb-4">
-                <p className="text-[#a89a5c] font-bold text-sm">Use code KICKOFF50 for $50 OFF!</p>
+                <p className="text-[#a89a5c] font-bold text-sm">Use code KICKOFF50 for $50 OFF teams!</p>
               </div>
               <ul className="text-white/60 text-sm mb-4 space-y-1">
                 <li>• 63&apos; × 26&apos; dividable cage</li>
                 <li>• Climate controlled facility</li>
-                <li>• Team practice & drills</li>
-                <li>• Private group sessions</li>
               </ul>
               <a href="https://cal.com/rodolfo-lizardo-tzrkyr/cages" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#a89a5c] text-[#1a2855] px-6 py-3 font-bold text-sm uppercase tracking-wider hover:bg-[#c4b87a] transition-colors w-full text-center">
                 Book Cage Time
@@ -217,7 +217,6 @@ export default function Home() {
 
             {/* 2. Jemile Weeks - Group Workouts */}
             <div className="bg-white border-4 border-[#1a2855] p-6 md:p-8 hover:border-[#a89a5c] transition-colors">
-              {/* Jemile's Photo */}
               <div className="relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-[#1a2855]">
                 <Image
                   src="/images/jemile.jpg"
@@ -226,8 +225,9 @@ export default function Home() {
                   className="object-cover"
                 />
               </div>
-              <h3 className="font-display text-2xl text-[#1a2855] mb-2 text-center">Group Open Field Workout</h3>
-              <p className="text-[#a89a5c] font-semibold text-center mb-2">with Jemile Weeks</p>
+              <h3 className="font-display text-2xl text-[#1a2855] mb-1 text-center">Group Open Field Workout</h3>
+              <p className="text-[#a89a5c] font-semibold text-center mb-1">with Jemile Weeks</p>
+              <p className="text-gray-500 text-xs font-bold uppercase tracking-wider text-center mb-3">ex-MLB Player</p>
               <div className="text-[#a89a5c] font-display text-4xl mb-2 text-center">$70</div>
               <p className="text-[#1a2855] font-semibold mb-4 text-center">2 hours • Sat or Sun</p>
               <p className="text-gray-600 text-sm mb-4 text-center">
@@ -238,7 +238,32 @@ export default function Home() {
               </a>
             </div>
 
-            {/* 3. After School Program */}
+            {/* 3. Tony Vega - Private Training */}
+            <div className="bg-[#1a2855] p-6 md:p-8 relative overflow-hidden group">
+              <div className="relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-[#a89a5c]">
+                <Image
+                  src="/images/tony.jpg"
+                  alt="Tony Vega"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <h3 className="font-display text-3xl text-white mb-1 text-center">Training with Tony Vega</h3>
+              <p className="text-[#a89a5c] text-xs font-bold uppercase tracking-wider text-center mb-3">Former Duke Coach</p>
+              <div className="text-[#a89a5c] font-display text-4xl mb-2 text-center">$125</div>
+              <p className="text-white/70 mb-4 text-center">1 hour • One-on-one</p>
+              <p className="text-white/60 text-sm mb-6 text-center">
+                Elite training with experienced coaching.
+              </p>
+              <a href="tel:3522986699" className="inline-block bg-[#a89a5c] text-[#1a2855] px-6 py-3 font-bold text-sm uppercase tracking-wider hover:bg-[#c4b87a] transition-colors w-full text-center">
+                Call to Book
+              </a>
+            </div>
+          </div>
+
+          {/* Row 2: Recurring programs (2 centered) */}
+          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            {/* 4. After School Program */}
             <div className="bg-white border-4 border-[#1a2855] p-6 md:p-8 hover:border-[#a89a5c] transition-colors">
               <h3 className="font-display text-2xl text-[#1a2855] mb-2">After School Program</h3>
               <div className="text-[#a89a5c] font-display text-4xl mb-2">$100<span className="text-lg">/week</span></div>
@@ -253,7 +278,7 @@ export default function Home() {
               <EnrollButton programType="afterschool" label="Enroll Now" />
             </div>
 
-            {/* 4. Fitness Assessment */}
+            {/* 5. Fitness Assessment */}
             <div className="bg-white border-4 border-[#1a2855] p-6 md:p-8 hover:border-[#a89a5c] transition-colors">
               <h3 className="font-display text-2xl text-[#1a2855] mb-2">Fitness Assessment</h3>
               <div className="text-[#a89a5c] font-display text-4xl mb-2">$75</div>
@@ -263,28 +288,6 @@ export default function Home() {
                 Comprehensive fitness evaluation.
               </p>
               <EnrollButton programType="fitness" label="Book Now" />
-            </div>
-
-            {/* 5. Tony Vega - Private Training (last per business request) */}
-            <div className="bg-[#1a2855] p-6 md:p-8 relative overflow-hidden group">
-              {/* Tony's Photo */}
-              <div className="relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-[#a89a5c]">
-                <Image
-                  src="/images/tony.jpg"
-                  alt="Tony Vega"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <h3 className="font-display text-3xl text-white mb-2 text-center">Training with Tony Vega</h3>
-              <div className="text-[#a89a5c] font-display text-4xl mb-2 text-center">$125</div>
-              <p className="text-white/70 mb-4 text-center">1 hour session</p>
-              <p className="text-white/60 text-sm mb-6 text-center">
-                One-on-one elite training with experienced coaching.
-              </p>
-              <a href="tel:3522986699" className="inline-block bg-[#a89a5c] text-[#1a2855] px-6 py-3 font-bold text-sm uppercase tracking-wider hover:bg-[#c4b87a] transition-colors w-full text-center">
-                📞 Call to Book
-              </a>
             </div>
           </div>
 
@@ -299,7 +302,7 @@ export default function Home() {
               <p className="text-white/80 mb-6 max-w-xl mx-auto text-lg">
                 Book a 2-hour team training session and save $50 with promo code <strong className="text-[#a89a5c]">KICKOFF50</strong>
               </p>
-              <a href="#schedule" className="inline-block bg-[#a89a5c] text-[#1a2855] px-10 py-4 font-bold uppercase tracking-wider hover:bg-[#c4b87a] transition-colors text-lg">
+              <a href="https://cal.com/rodolfo-lizardo-tzrkyr/cages" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#a89a5c] text-[#1a2855] px-10 py-4 font-bold uppercase tracking-wider hover:bg-[#c4b87a] transition-colors text-lg">
                 Book Now & Use Code: KICKOFF50
               </a>
             </div>
@@ -307,120 +310,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Schedule / Booking Section */}
-      <section id="schedule" className="py-24 md:py-32 bg-[#1a2855]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <span className="text-[#a89a5c] font-bold text-sm uppercase tracking-widest">Ready to Train?</span>
-            <h2 className="font-display text-5xl md:text-6xl text-white mt-2">BOOK YOUR SESSION</h2>
-            <p className="text-white/60 mt-4 text-lg max-w-xl mx-auto">
-              Select a time that works for you. We&apos;ll confirm your session within 24 hours.
-            </p>
-          </div>
-
-          {/* Hours & Contact */}
-          <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-            {/* Hours */}
-            <div className="bg-white/10 rounded-lg p-8 text-center">
-              <h3 className="font-display text-2xl text-[#a89a5c] mb-4">FACILITY HOURS</h3>
-              <div className="text-white space-y-2">
-                <p><span className="text-white/60">Mon - Fri:</span> 2 PM - 10 PM</p>
-                <p><span className="text-white/60">Sat - Sun:</span> By Appointment</p>
-              </div>
-            </div>
-
-            {/* Contact */}
-            <div className="bg-white/10 rounded-lg p-8 text-center">
-              <h3 className="font-display text-2xl text-[#a89a5c] mb-4">CONTACT US</h3>
-              <a href="tel:3522986699" className="block text-white text-2xl font-bold hover:text-[#a89a5c] transition-colors mb-2">
-                (352) 298-6699
-              </a>
-              <a href="mailto:info@r2gacademy.com" className="text-white/60 hover:text-[#a89a5c] transition-colors">
-                info@r2gacademy.com
-              </a>
-            </div>
-          </div>
-
-          {/* Quick booking links */}
-          <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <a href="#services" className="bg-[#a89a5c] text-[#1a2855] px-8 py-4 font-bold uppercase tracking-wider hover:bg-[#c4b87a] transition-colors">
-              View All Programs
-            </a>
-            <a href="https://cal.com/rodolfo-lizardo-tzrkyr/cages" target="_blank" rel="noopener noreferrer" className="border-2 border-[#a89a5c] text-[#a89a5c] px-8 py-4 font-bold uppercase tracking-wider hover:bg-[#a89a5c] hover:text-[#1a2855] transition-colors">
-              Book Cage Rental
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Video Section */}
-      <section className="py-16 bg-[#1a1a1a]">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <span className="text-[#a89a5c] font-bold text-sm uppercase tracking-widest">See Us In Action</span>
-            <h2 className="font-display text-4xl md:text-5xl text-white mt-2">BUILDING THE DREAM</h2>
-          </div>
-
-          {/* Vimeo Video */}
-          <div className="aspect-video rounded-lg overflow-hidden shadow-2xl">
-            <iframe
-              src="https://player.vimeo.com/video/1121769977?h=c8241a96b0"
-              style={{ width: '100%', height: '100%', border: 'none' }}
-              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-              allowFullScreen
-              title="R2G Academy - Building the Dream"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Photo Gallery */}
-      <section id="gallery" className="py-24 md:py-32 bg-[#f5f2eb]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <span className="text-[#a89a5c] font-bold text-sm uppercase tracking-widest">Our Athletes</span>
-            <h2 className="font-display text-5xl md:text-6xl text-[#1a2855] mt-2">PHOTO GALLERY</h2>
-            <p className="text-gray-600 mt-4 text-lg">Champions in the making</p>
-          </div>
-
-          {/* Full Gallery Grid - Team Florida Photos */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { img: 1, label: 'Team Practice', title: 'Building Skills Together' },
-              { img: 2, label: 'Game Day', title: 'Competition Ready' },
-              { img: 3, label: 'Training Session', title: 'Elite Development' },
-              { img: 4, label: 'Team Spirit', title: 'Championship Mindset' },
-              { img: 5, label: 'Youth Program', title: 'Future Stars' },
-              { img: 6, label: 'Skill Work', title: 'Perfecting the Craft' },
-            ].map((photo) => (
-              <div key={photo.img} className="group relative overflow-hidden bg-white p-3 shadow-lg hover:shadow-2xl transition-shadow">
-                <div className="relative aspect-[4/3] overflow-hidden">
-                  <Image
-                    src={`/images/team-florida-${photo.img}.jpg`}
-                    alt={photo.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div className="mt-3 pb-1">
-                  <div className="text-[#a89a5c] text-xs font-bold uppercase tracking-wider">{photo.label}</div>
-                  <h3 className="font-display text-xl text-[#1a2855]">{photo.title}</h3>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* CTA */}
-          <div className="text-center mt-12">
-            <p className="text-gray-600 mb-4">Want to see your team on this wall?</p>
-            <a href="#schedule" className="inline-block bg-[#a89a5c] text-[#1a2855] px-8 py-4 font-bold uppercase tracking-wider hover:bg-[#c4b87a] transition-colors">
-              Start Training Today
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Champions Section */}
+      {/* Champions Section — "The Proof" (moved up per feedback) */}
       <section id="wins" className="py-24 md:py-32 bg-[#1a2855] relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <Image
@@ -474,7 +364,7 @@ export default function Home() {
 
             <div className="bg-[#a89a5c] p-6 text-center flex flex-col justify-center">
               <h3 className="font-display text-2xl text-[#1a2855] mb-4">Your Team Next?</h3>
-              <a href="#schedule" className="inline-block bg-[#1a2855] text-white px-6 py-3 font-bold uppercase tracking-wider hover:bg-[#0f1a38] transition-colors">
+              <a href="#services" className="inline-block bg-[#1a2855] text-white px-6 py-3 font-bold uppercase tracking-wider hover:bg-[#0f1a38] transition-colors">
                 Start Training
               </a>
             </div>
@@ -482,7 +372,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About */}
+      {/* About — "Our Mission" (moved up per feedback) */}
       <section id="about" className="py-24 md:py-32 bg-[#f5f2eb]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -556,6 +446,73 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Video Section — "Building the Dream" */}
+      <section className="py-16 bg-[#1a1a1a]">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="text-[#a89a5c] font-bold text-sm uppercase tracking-widest">See Us In Action</span>
+            <h2 className="font-display text-4xl md:text-5xl text-white mt-2">BUILDING THE DREAM</h2>
+          </div>
+
+          {/* Vimeo Video */}
+          <div className="aspect-video rounded-lg overflow-hidden shadow-2xl">
+            <iframe
+              src="https://player.vimeo.com/video/1121769977?h=c8241a96b0"
+              style={{ width: '100%', height: '100%', border: 'none' }}
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+              allowFullScreen
+              title="R2G Academy - Building the Dream"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Photo Gallery */}
+      <section id="gallery" className="py-24 md:py-32 bg-[#f5f2eb]">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="text-[#a89a5c] font-bold text-sm uppercase tracking-widest">Our Athletes</span>
+            <h2 className="font-display text-5xl md:text-6xl text-[#1a2855] mt-2">PHOTO GALLERY</h2>
+            <p className="text-gray-600 mt-4 text-lg">Champions in the making</p>
+          </div>
+
+          {/* Full Gallery Grid - Team Florida Photos */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { img: 1, label: 'Team Practice', title: 'Building Skills Together' },
+              { img: 2, label: 'Game Day', title: 'Competition Ready' },
+              { img: 3, label: 'Training Session', title: 'Elite Development' },
+              { img: 4, label: 'Team Spirit', title: 'Championship Mindset' },
+              { img: 5, label: 'Youth Program', title: 'Future Stars' },
+              { img: 6, label: 'Skill Work', title: 'Perfecting the Craft' },
+            ].map((photo) => (
+              <div key={photo.img} className="group relative overflow-hidden bg-white p-3 shadow-lg hover:shadow-2xl transition-shadow">
+                <div className="relative aspect-[4/3] overflow-hidden">
+                  <Image
+                    src={`/images/team-florida-${photo.img}.jpg`}
+                    alt={photo.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="mt-3 pb-1">
+                  <div className="text-[#a89a5c] text-xs font-bold uppercase tracking-wider">{photo.label}</div>
+                  <h3 className="font-display text-xl text-[#1a2855]">{photo.title}</h3>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* CTA */}
+          <div className="text-center mt-12">
+            <p className="text-gray-600 mb-4">Want to see your team on this wall?</p>
+            <a href="#services" className="inline-block bg-[#a89a5c] text-[#1a2855] px-8 py-4 font-bold uppercase tracking-wider hover:bg-[#c4b87a] transition-colors">
+              Start Training Today
+            </a>
           </div>
         </div>
       </section>
