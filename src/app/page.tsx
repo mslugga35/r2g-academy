@@ -261,21 +261,27 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Row 2: Recurring programs (2 centered) */}
+          {/* Row 2: Additional offerings (2 centered) */}
           <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-            {/* 4. After School Program */}
-            <div className="bg-white border-4 border-[#1a2855] p-6 md:p-8 hover:border-[#a89a5c] transition-colors">
-              <h3 className="font-display text-2xl text-[#1a2855] mb-2">After School Program</h3>
-              <div className="text-[#a89a5c] font-display text-4xl mb-2">$100<span className="text-lg">/week</span></div>
-              <p className="text-[#1a2855] font-semibold mb-2">Mon-Fri • 3 hours</p>
-              <p className="text-gray-500 text-xs mb-4 italic">Drop Off Only</p>
-              <ul className="text-gray-600 text-sm mb-4 space-y-1">
-                <li>• Baseball/Softball IQ</li>
-                <li>• Exercise & conditioning</li>
-                <li>• Throwing & glove work</li>
-                <li>• Hitting drills</li>
-              </ul>
-              <EnrollButton programType="afterschool" label="Enroll Now" />
+            {/* 4. Jahmon Taylor - Pitching & Mental Approach */}
+            <div className="bg-[#1a2855] p-6 md:p-8 relative overflow-hidden group">
+              <div className="relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-[#a89a5c]">
+                <Image
+                  src="/images/jahmon.jpg"
+                  alt="Jahmon Taylor"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <h3 className="font-display text-3xl text-white mb-1 text-center">Jahmon Taylor</h3>
+              <p className="text-[#a89a5c] text-xs font-bold uppercase tracking-wider text-center mb-3">Pitching Mechanics & Mental Approach</p>
+              <p className="text-white/60 text-sm mb-4 text-center">
+                Coppin State Graduate. Pro ball experience.<br/>
+                NSCA Certified Strength & Conditioning Specialist.
+              </p>
+              <a href="tel:4076982269" className="inline-block bg-[#a89a5c] text-[#1a2855] px-6 py-3 font-bold text-sm uppercase tracking-wider hover:bg-[#c4b87a] transition-colors w-full text-center">
+                Call to Book: (407) 698-2269
+              </a>
             </div>
 
             {/* 5. Fitness Assessment */}

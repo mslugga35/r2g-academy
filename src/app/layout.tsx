@@ -103,10 +103,8 @@ export default function RootLayout({
                     "@type": "Offer",
                     itemOffered: {
                       "@type": "Service",
-                      name: "After School Program",
-                      description: "Comprehensive after school baseball/softball program",
-                      price: "100",
-                      priceCurrency: "USD",
+                      name: "Pitching Training with Jahmon Taylor",
+                      description: "Pitching mechanics and mental approach training with NSCA certified specialist",
                     },
                   },
                   {
