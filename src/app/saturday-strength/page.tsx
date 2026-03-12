@@ -1,15 +1,14 @@
 /**
- * Pitching Strength & Arm Care Registration (Sunday sessions)
+ * Saturday Strength & Conditioning Registration
  *
- * Session 1: 10:00-11:30 AM ($30)
- * Session 2: 12:00-1:30 PM ($30)
+ * Ages 13-14 | Every Saturday | 2 Hours | $50/session | 10 max per group
  */
 'use client';
 
 import Image from 'next/image';
 import { useFormSubmit } from '../components/useFormSubmit';
 
-export default function PitchingRegister() {
+export default function SaturdayStrength() {
   const { submitted, loading, handleSubmit } = useFormSubmit();
 
   if (submitted) {
@@ -18,7 +17,7 @@ export default function PitchingRegister() {
         <div className="bg-white rounded-lg p-8 max-w-md text-center">
           <div className="text-6xl mb-4">&#9989;</div>
           <h1 className="text-2xl font-bold text-[#1a2855] mb-2">Registration Received!</h1>
-          <p className="text-gray-600 mb-4">We&apos;ll contact you shortly to confirm your spot.</p>
+          <p className="text-gray-600 mb-4">We&apos;ll contact you to confirm your spot for Saturday Strength &amp; Conditioning.</p>
           <a href="/" className="text-[#a89a5c] font-semibold hover:underline">
             Visit R2G Academy &rarr;
           </a>
@@ -40,25 +39,29 @@ export default function PitchingRegister() {
             className="mx-auto mb-4"
           />
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
-            Pitching Strength
+            Strength &amp; Conditioning
           </h1>
-          <p className="text-[#a89a5c] text-xl">&amp; Arm Care Registration</p>
-          <p className="text-white/70 mt-2">Every Sunday</p>
+          <p className="text-[#a89a5c] text-xl">Saturday Sessions</p>
+          <p className="text-white/70 mt-3 text-sm leading-relaxed">
+            <strong className="text-white">Ages 13-14</strong> &bull; Every Saturday &bull; 2 Hours<br />
+            <strong className="text-[#a89a5c] text-2xl">$50</strong> per session<br />
+            <span className="text-white/50">10 athletes max per group</span>
+          </p>
         </div>
 
         {/* Registration form */}
         <form onSubmit={handleSubmit} className="bg-white rounded-lg p-6 md:p-8 space-y-5">
-          <input type="hidden" name="_subject" value="Pitching Strength & Arm Care Registration" />
+          <input type="hidden" name="_subject" value="Saturday Strength & Conditioning Registration" />
           <input type="hidden" name="_template" value="table" />
           {/* Honeypot — hidden from real users, catches bots */}
           <input type="text" name="_honey" className="hidden" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
 
           <div>
-            <label htmlFor="pr-name" className="block text-[#1a2855] font-semibold mb-2">
+            <label htmlFor="sc-name" className="block text-[#1a2855] font-semibold mb-2">
               Athlete Name *
             </label>
             <input
-              id="pr-name"
+              id="sc-name"
               type="text"
               name="name"
               required
@@ -68,11 +71,27 @@ export default function PitchingRegister() {
           </div>
 
           <div>
-            <label htmlFor="pr-email" className="block text-[#1a2855] font-semibold mb-2">
+            <label htmlFor="sc-age" className="block text-[#1a2855] font-semibold mb-2">
+              Athlete Age *
+            </label>
+            <input
+              id="sc-age"
+              type="number"
+              name="age"
+              required
+              min="13"
+              max="14"
+              className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#a89a5c] focus:outline-none"
+              placeholder="13 or 14"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="sc-email" className="block text-[#1a2855] font-semibold mb-2">
               Parent/Guardian Email *
             </label>
             <input
-              id="pr-email"
+              id="sc-email"
               type="email"
               name="email"
               required
@@ -82,67 +101,44 @@ export default function PitchingRegister() {
           </div>
 
           <div>
-            <label htmlFor="pr-age" className="block text-[#1a2855] font-semibold mb-2">
-              Athlete Age *
+            <label htmlFor="sc-phone" className="block text-[#1a2855] font-semibold mb-2">
+              Phone Number *
             </label>
             <input
-              id="pr-age"
-              type="number"
-              name="age"
+              id="sc-phone"
+              type="tel"
+              name="phone"
               required
-              min="8"
-              max="18"
               className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#a89a5c] focus:outline-none"
-              placeholder="Age"
+              placeholder="(555) 123-4567"
             />
           </div>
 
           <div>
-            <label htmlFor="pr-injuries" className="block text-[#1a2855] font-semibold mb-2">
-              Prior Arm/Shoulder Injuries
+            <label htmlFor="sc-injuries" className="block text-[#1a2855] font-semibold mb-2">
+              Prior Injuries &amp; Medical Conditions
             </label>
             <textarea
-              id="pr-injuries"
+              id="sc-injuries"
               name="injuries_medical"
               rows={3}
               className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#a89a5c] focus:outline-none"
-              placeholder="List any arm or shoulder injuries we should know about (or write 'None')"
+              placeholder="List any injuries or conditions we should know about (or write 'None')"
             />
           </div>
 
           <div>
-            <label htmlFor="pr-experience" className="block text-[#1a2855] font-semibold mb-2">
-              Years of Pitching Experience *
+            <label htmlFor="sc-sports" className="block text-[#1a2855] font-semibold mb-2">
+              Sports Currently Playing *
             </label>
-            <select
-              id="pr-experience"
-              name="years_pitching"
+            <textarea
+              id="sc-sports"
+              name="sports_played"
               required
+              rows={2}
               className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#a89a5c] focus:outline-none"
-            >
-              <option value="">Select...</option>
-              <option value="0">None / Just starting</option>
-              <option value="1">Less than 1 year</option>
-              <option value="1-2">1-2 years</option>
-              <option value="3-4">3-4 years</option>
-              <option value="5+">5+ years</option>
-            </select>
-          </div>
-
-          <div>
-            <label htmlFor="pr-session" className="block text-[#1a2855] font-semibold mb-2">
-              Session Preference *
-            </label>
-            <select
-              id="pr-session"
-              name="session"
-              required
-              className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#a89a5c] focus:outline-none"
-            >
-              <option value="">Select...</option>
-              <option value="Session 1: 10:00-11:30 AM">Session 1 - 10:00-11:30 AM ($30)</option>
-              <option value="Session 2: 12:00-1:30 PM">Session 2 - 12:00-1:30 PM ($30)</option>
-            </select>
+              placeholder="e.g., Baseball (3 yrs), Football (2 yrs)"
+            />
           </div>
 
           <button

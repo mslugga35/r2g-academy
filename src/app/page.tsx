@@ -163,6 +163,25 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Spring Break Pitching Clinic Banner — REMOVE AFTER 3/19/2026 */}
+      <section className="bg-red-700 py-4 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="halftone w-full h-full" />
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-4">
+            <span className="bg-white text-red-700 text-xs font-bold px-3 py-1 uppercase tracking-widest animate-pulse">Spring Break</span>
+            <div className="text-white">
+              <p className="font-bold text-lg">Pitching Clinic — March 17 &amp; 19</p>
+              <p className="text-white/80 text-sm">Ages 9-14 &bull; Balance, Form, Arm Care &amp; Long Toss &bull; $75-$100</p>
+            </div>
+          </div>
+          <Link href="/spring-break-pitching" className="bg-white text-red-700 px-6 py-3 font-bold text-sm uppercase tracking-wider hover:bg-gray-100 transition-colors whitespace-nowrap">
+            Register Now
+          </Link>
+        </div>
+      </section>
+
       {/* Services/Programs */}
       <section id="services" className="py-24 md:py-32 bg-[#f5f2eb]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -171,6 +190,63 @@ export default function Home() {
             <h2 className="font-display text-5xl md:text-6xl text-[#1a2855] mt-2">
               BOOK YOUR SESSION
             </h2>
+          </div>
+
+          {/* Spring Break Pitching Clinic — REMOVE AFTER 3/19/2026 */}
+          <div className="mb-8 bg-red-700 p-6 md:p-8 relative overflow-hidden border-4 border-red-900">
+            <div className="absolute top-0 right-0 bg-white text-red-700 text-xs font-bold px-4 py-2 uppercase tracking-widest">
+              Next Week!
+            </div>
+            <div className="grid md:grid-cols-2 gap-6 items-center">
+              <div>
+                <h3 className="font-display text-3xl text-white mb-2">Spring Break Pitching Clinic</h3>
+                <p className="text-white/80 mb-3">
+                  <strong className="text-white">2-Day Clinic:</strong> Tue March 17 &amp; Thu March 19
+                </p>
+                <div className="space-y-1 text-white/70 text-sm mb-4">
+                  <p><strong className="text-white">Day 1:</strong> Balance, Form &amp; Drive</p>
+                  <p><strong className="text-white">Day 2:</strong> Arm Care, Home Strengthening &amp; Long Toss</p>
+                </div>
+                <div className="flex gap-4">
+                  <div className="bg-white/10 rounded px-4 py-2 text-center">
+                    <p className="text-[#a89a5c] font-bold text-xl">$75</p>
+                    <p className="text-white text-xs">Ages 9-11</p>
+                    <p className="text-white/50 text-xs">10AM-12PM</p>
+                  </div>
+                  <div className="bg-white/10 rounded px-4 py-2 text-center">
+                    <p className="text-[#a89a5c] font-bold text-xl">$100</p>
+                    <p className="text-white text-xs">Ages 13-14</p>
+                    <p className="text-white/50 text-xs">12PM-2PM</p>
+                  </div>
+                </div>
+              </div>
+              <div className="text-center md:text-right">
+                <Link href="/spring-break-pitching" className="inline-block bg-white text-red-700 px-8 py-4 font-bold text-lg uppercase tracking-wider hover:bg-gray-100 transition-colors">
+                  Register Now
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Saturday Strength & Conditioning */}
+          <div className="mb-8 bg-[#1a2855] p-6 md:p-8 border-4 border-[#a89a5c]">
+            <div className="grid md:grid-cols-2 gap-6 items-center">
+              <div>
+                <div className="inline-block bg-[#a89a5c] text-[#1a2855] text-xs font-bold px-3 py-1 uppercase tracking-widest mb-3">New Program</div>
+                <h3 className="font-display text-3xl text-white mb-2">Saturday Strength &amp; Conditioning</h3>
+                <p className="text-white/80 mb-2">Ages 13-14 &bull; Every Saturday &bull; 2 Hours</p>
+                <div className="flex items-baseline gap-2 mb-3">
+                  <span className="text-[#a89a5c] font-display text-4xl">$50</span>
+                  <span className="text-white/60 text-sm">per session</span>
+                </div>
+                <p className="text-white/50 text-sm">10 athletes max per group</p>
+              </div>
+              <div className="text-center md:text-right">
+                <Link href="/saturday-strength" className="inline-block bg-[#a89a5c] text-[#1a2855] px-8 py-4 font-bold text-sm uppercase tracking-wider hover:bg-[#c4b87a] transition-colors">
+                  Register Now
+                </Link>
+              </div>
+            </div>
           </div>
 
           {/* Row 1: Session-based offerings (3 across) */}
