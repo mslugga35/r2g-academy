@@ -5,6 +5,17 @@ export const metadata: Metadata = {
   title: "R2G Academy | Baseball Training with MLB Pro Jemile Weeks | Altamonte Springs FL",
   description: "Train with former MLB player Jemile Weeks (Oakland A's, Team USA coach) at R2G Academy in Altamonte Springs, FL. Indoor batting cages, hitting lessons, pitching training. Ages 5-18. Call (352) 298-6699.",
   keywords: "Jemile Weeks baseball training, indoor batting cages Altamonte Springs, baseball training Seminole County, MLB player training Orlando, hitting lessons Florida, softball training, pitching lessons, youth baseball Orlando, R2G Academy, Tony Vega baseball, after school baseball program",
+  icons: {
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180" },
+    ],
+    shortcut: "/favicon.ico",
+  },
   openGraph: {
     title: "R2G Academy | Train with MLB Pro Jemile Weeks",
     description: "Train with former MLB player Jemile Weeks at R2G Academy. Indoor batting cages, elite instruction, ages 5-18. Altamonte Springs, FL.",
