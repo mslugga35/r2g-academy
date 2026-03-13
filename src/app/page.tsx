@@ -249,6 +249,18 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Fitness Assessment — under Saturday S&C */}
+          <div className="mb-8 bg-white border-4 border-[#1a2855] p-6 md:p-8 hover:border-[#a89a5c] transition-colors max-w-lg">
+            <h3 className="font-display text-2xl text-[#1a2855] mb-2">Fitness Assessment</h3>
+            <div className="text-[#a89a5c] font-display text-4xl mb-2">$75</div>
+            <p className="text-[#1a2855] font-semibold mb-4">45 min • Sat & Sun Only</p>
+            <p className="text-gray-600 text-sm mb-4">
+              Ages 12-15 boys and girls.<br/>
+              Comprehensive fitness evaluation.
+            </p>
+            <EnrollButton programType="fitness" label="Book Now" />
+          </div>
+
           {/* Row 1: Session-based offerings (3 across) */}
           <div className="grid md:grid-cols-3 gap-6 mb-6">
             {/* 1. Cage Rentals — Team + Single options */}
@@ -337,8 +349,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Row 2: Additional offerings (2 centered) */}
-          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+          {/* Row 2: Jahmon Taylor (centered) */}
+          <div className="max-w-md mx-auto">
             {/* 4. Jahmon Taylor - Pitching & Mental Approach */}
             <div className="bg-[#1a2855] p-6 md:p-8 relative overflow-hidden group">
               <div className="relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-[#a89a5c]">
@@ -358,18 +370,6 @@ export default function Home() {
               <a href="tel:4076982269" className="inline-block bg-[#a89a5c] text-[#1a2855] px-6 py-3 font-bold text-sm uppercase tracking-wider hover:bg-[#c4b87a] transition-colors w-full text-center">
                 Call to Book: (407) 698-2269
               </a>
-            </div>
-
-            {/* 5. Fitness Assessment */}
-            <div className="bg-white border-4 border-[#1a2855] p-6 md:p-8 hover:border-[#a89a5c] transition-colors">
-              <h3 className="font-display text-2xl text-[#1a2855] mb-2">Fitness Assessment</h3>
-              <div className="text-[#a89a5c] font-display text-4xl mb-2">$75</div>
-              <p className="text-[#1a2855] font-semibold mb-4">45 min • Sat & Sun Only</p>
-              <p className="text-gray-600 text-sm mb-4">
-                Ages 12-15 boys and girls.<br/>
-                Comprehensive fitness evaluation.
-              </p>
-              <EnrollButton programType="fitness" label="Book Now" />
             </div>
           </div>
 
