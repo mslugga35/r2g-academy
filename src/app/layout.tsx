@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "R2G Academy | Baseball Training with MLB Pro Jemile Weeks | Altamonte Springs FL",
-  description: "Train with former MLB player Jemile Weeks (Oakland A's, Team USA coach) at R2G Academy in Altamonte Springs, FL. Indoor batting cages, hitting lessons, pitching training. Ages 5-18. Call (352) 298-6699.",
+  title: "R2G Academy | Elite Baseball & Softball Training | Altamonte Springs FL",
+  description: "Elite baseball and softball training at R2G Academy in Altamonte Springs, FL. Indoor batting cages, hitting lessons, pitching training, pro-level instruction. Ages 5-18. Call (352) 298-6699.",
   keywords: "Jemile Weeks baseball training, indoor batting cages Altamonte Springs, baseball training Seminole County, MLB player training Orlando, hitting lessons Florida, softball training, pitching lessons, youth baseball Orlando, R2G Academy, Tony Vega baseball, after school baseball program",
   icons: {
     icon: [
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico",
   },
   openGraph: {
-    title: "R2G Academy | Train with MLB Pro Jemile Weeks",
-    description: "Train with former MLB player Jemile Weeks at R2G Academy. Indoor batting cages, elite instruction, ages 5-18. Altamonte Springs, FL.",
+    title: "R2G Academy | Elite Baseball & Softball Training",
+    description: "Elite baseball and softball training at R2G Academy. Indoor batting cages, pro-level instruction, ages 5-18. Altamonte Springs, FL.",
     url: "https://r2gacademy.com",
     siteName: "R2G Academy",
     locale: "en_US",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "R2G Academy | MLB Pro Training in Orlando",
-    description: "Train with former MLB player Jemile Weeks. Indoor batting cages & elite baseball/softball training in Altamonte Springs, FL.",
+    description: "Elite baseball & softball training at R2G Academy. Indoor batting cages, pro instruction, ages 5-18. Altamonte Springs, FL.",
   },
   robots: {
     index: true,
