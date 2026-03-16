@@ -5,6 +5,15 @@ import Link from 'next/link';
 
 const blogPosts = [
   {
+    slug: 'building-mental-toughness-youth-baseball-softball-florida',
+    title: 'Building Mental Toughness in Young Baseball and Softball Players: A Parent\'s Guide',
+    excerpt: 'Mental toughness is just as important as physical skills in youth baseball and softball. Learn proven strategies to help your young athlete develop confidence, focus, and resilience on the field through practical exercises and positive reinforcement techniques.',
+    image: 'https://images.unsplash.com/photo-1471295253337-3ceaaedca402?w=800&q=80',
+    date: '2026-03-16',
+    readTime: '5 min read',
+    category: 'Youth Development',
+  },
+  {
     slug: 'youth-baseball-mental-game-confidence-building',
     title: 'Building Mental Toughness: How to Help Young Athletes Overcome Baseball and Softball Anxiety',
     excerpt: 'Mental preparation is just as important as physical skills in youth baseball and softball. Learn proven strategies to help your young athlete build confidence, handle pressure situations, and develop the mental toughness needed to succeed on the field.',
