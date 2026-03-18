@@ -367,8 +367,8 @@ export default function Home() {
                 Coppin State Graduate. Pro ball experience.<br/>
                 NSCA Certified Strength & Conditioning Specialist.
               </p>
-              <a href="tel:4076982269" className="inline-block bg-[#a89a5c] text-[#1a2855] px-6 py-3 font-bold text-sm uppercase tracking-wider hover:bg-[#c4b87a] transition-colors w-full text-center">
-                Call to Book: (407) 698-2269
+              <a href="mailto:coach@trainingwithinertia.com" className="inline-block bg-[#a89a5c] text-[#1a2855] px-6 py-3 font-bold text-sm uppercase tracking-wider hover:bg-[#c4b87a] transition-colors w-full text-center">
+                Email to Book: coach@trainingwithinertia.com
               </a>
             </div>
           </div>
