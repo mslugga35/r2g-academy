@@ -5,6 +5,15 @@ import Link from 'next/link';
 
 const blogPosts = [
   {
+    slug: 'youth-baseball-mental-game-confidence-focus-tips',
+    title: 'Building Mental Toughness: How Young Athletes Can Develop Focus and Confidence at the Plate',
+    excerpt: 'The mental game is often what separates good players from great ones in youth baseball and softball. Learn proven techniques to help young athletes overcome fear, build confidence, and maintain focus during high-pressure situations.',
+    image: 'https://images.unsplash.com/photo-1471295253337-3ceaaedca402?w=800&q=80',
+    date: '2026-03-23',
+    readTime: '5 min read',
+    category: 'Youth Development',
+  },
+  {
     slug: 'building-mental-toughness-youth-baseball-softball-florida',
     title: 'Building Mental Toughness in Young Baseball and Softball Players: A Parent\'s Guide',
     excerpt: 'Mental toughness is just as important as physical skills in youth baseball and softball. Learn proven strategies to help your young athlete develop confidence, focus, and resilience on the field through practical exercises and positive reinforcement techniques.',
