@@ -5,6 +5,15 @@ import Link from 'next/link';
 
 const blogPosts = [
   {
+    slug: 'mental-game-youth-baseball-softball-pressure-situations',
+    title: 'Building Mental Toughness: How Young Players Can Master Pressure Situations in Baseball and Softball',
+    excerpt: 'Mental preparation is just as important as physical training for young baseball and softball players. Learn proven techniques to help your athlete develop confidence, focus, and resilience when facing high-pressure game situations.',
+    image: 'https://images.unsplash.com/photo-1471295253337-3ceaaedca402?w=800&q=80',
+    date: '2026-04-06',
+    readTime: '5 min read',
+    category: 'Youth Development',
+  },
+  {
     slug: 'mental-game-youth-baseball-softball-confidence-focus',
     title: 'Building Mental Toughness: How to Develop Focus and Confidence in Young Baseball and Softball Players',
     excerpt: 'Mental preparation is just as important as physical skills in youth baseball and softball. Learn proven techniques to help young athletes overcome pressure, stay focused during games, and build the confidence needed to perform at their best on the field.',
