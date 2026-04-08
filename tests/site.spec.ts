@@ -140,13 +140,13 @@ test.describe('R2G Academy Website', () => {
 
   // ─── Core: Content Sections ───────────────────────────────────────
 
-  test('video section displays Vimeo embed', async ({ page }) => {
+  test('video section displays YouTube embed', async ({ page }) => {
     await page.goto(BASE_URL);
 
-    // Vimeo iframe is below the fold — must scroll first
-    const vimeoFrame = page.locator('iframe[src*="vimeo.com"]');
-    await vimeoFrame.scrollIntoViewIfNeeded();
-    await expect(vimeoFrame).toBeVisible({ timeout: 15000 });
+    // YouTube iframe is below the fold — must scroll first
+    const ytFrame = page.locator('iframe[src*="youtube.com"]');
+    await ytFrame.scrollIntoViewIfNeeded();
+    await expect(ytFrame).toBeVisible({ timeout: 15000 });
   });
 
   test('gallery section shows photos', async ({ page }) => {

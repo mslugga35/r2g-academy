@@ -540,12 +540,12 @@ export default function Home() {
             <h2 className="font-display text-4xl md:text-5xl text-white mt-2">BUILDING THE DREAM</h2>
           </div>
 
-          {/* Vimeo Video */}
+          {/* YouTube Video */}
           <div className="aspect-video rounded-lg overflow-hidden shadow-2xl">
             <iframe
-              src="https://player.vimeo.com/video/1121769977?h=c8241a96b0"
+              src="https://www.youtube.com/embed/nIXl5PC6N9Q"
               style={{ width: '100%', height: '100%', border: 'none' }}
-              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               title="R2G Academy - Building the Dream"
             />
