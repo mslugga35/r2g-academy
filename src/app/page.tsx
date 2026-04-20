@@ -176,7 +176,7 @@ export default function Home() {
               <p className="text-white/80 text-sm">Ages 9+ &bull; 2 Sessions Daily &bull; 15 Athletes Max &bull; $335/week</p>
             </div>
           </div>
-          <a href="tel:3522986699" className="bg-white text-orange-700 px-6 py-3 font-bold text-sm uppercase tracking-wider hover:bg-gray-100 transition-colors whitespace-nowrap">
+          <a href="#summer-program" className="bg-white text-orange-700 px-6 py-3 font-bold text-sm uppercase tracking-wider hover:bg-gray-100 transition-colors whitespace-nowrap">
             Reserve Your Spot
           </a>
         </div>
@@ -193,7 +193,7 @@ export default function Home() {
           </div>
 
           {/* Summer Performance Program */}
-          <div className="mb-8 bg-orange-600 p-6 md:p-8 relative overflow-hidden border-4 border-orange-800">
+          <div id="summer-program" className="mb-8 bg-orange-600 p-6 md:p-8 relative overflow-hidden border-4 border-orange-800 scroll-mt-24">
             <div className="absolute top-0 right-0 bg-white text-orange-700 text-xs font-bold px-4 py-2 uppercase tracking-widest">
               Summer &apos;26
             </div>
