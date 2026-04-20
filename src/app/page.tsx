@@ -163,22 +163,22 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Spring Break Pitching Clinic Banner — REMOVE AFTER 3/19/2026 */}
-      <section className="bg-red-700 py-4 relative overflow-hidden">
+      {/* Summer Performance Program Banner */}
+      <section className="bg-orange-600 py-4 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="halftone w-full h-full" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-4">
-            <span className="bg-white text-red-700 text-xs font-bold px-3 py-1 uppercase tracking-widest animate-pulse">Spring Break</span>
+            <span className="bg-white text-orange-700 text-xs font-bold px-3 py-1 uppercase tracking-widest animate-pulse">Summer &apos;26</span>
             <div className="text-white">
-              <p className="font-bold text-lg">Pitching Clinic — March 17 &amp; 19</p>
-              <p className="text-white/80 text-sm">Ages 9-14 &bull; Balance, Form, Arm Care &amp; Long Toss &bull; $75-$100</p>
+              <p className="font-bold text-lg">Summer Performance Program — Mon–Fri</p>
+              <p className="text-white/80 text-sm">Ages 9+ &bull; 2 Sessions Daily &bull; 15 Athletes Max &bull; $335/week</p>
             </div>
           </div>
-          <Link href="/spring-break-pitching" className="bg-white text-red-700 px-6 py-3 font-bold text-sm uppercase tracking-wider hover:bg-gray-100 transition-colors whitespace-nowrap">
-            Register Now
-          </Link>
+          <a href="tel:3522986699" className="bg-white text-orange-700 px-6 py-3 font-bold text-sm uppercase tracking-wider hover:bg-gray-100 transition-colors whitespace-nowrap">
+            Reserve Your Spot
+          </a>
         </div>
       </section>
 
@@ -192,38 +192,58 @@ export default function Home() {
             </h2>
           </div>
 
-          {/* Spring Break Pitching Clinic — REMOVE AFTER 3/19/2026 */}
-          <div className="mb-8 bg-red-700 p-6 md:p-8 relative overflow-hidden border-4 border-red-900">
-            <div className="absolute top-0 right-0 bg-white text-red-700 text-xs font-bold px-4 py-2 uppercase tracking-widest">
-              Next Week!
+          {/* Summer Performance Program */}
+          <div className="mb-8 bg-orange-600 p-6 md:p-8 relative overflow-hidden border-4 border-orange-800">
+            <div className="absolute top-0 right-0 bg-white text-orange-700 text-xs font-bold px-4 py-2 uppercase tracking-widest">
+              Summer &apos;26
             </div>
-            <div className="grid md:grid-cols-2 gap-6 items-center">
+            <div className="grid md:grid-cols-2 gap-6 items-start">
               <div>
-                <h3 className="font-display text-3xl text-white mb-2">Spring Break Pitching Clinic</h3>
-                <p className="text-white/80 mb-3">
-                  <strong className="text-white">2-Day Clinic:</strong> Tue March 17 &amp; Thu March 19
+                <h3 className="font-display text-3xl text-white mb-2">Summer Performance Program</h3>
+                <p className="text-white/90 mb-3">
+                  <strong className="text-white">Mon–Fri</strong> &bull; Ages 9+ &bull; 15 Athletes Max/Session
                 </p>
-                <div className="space-y-1 text-white/70 text-sm mb-4">
-                  <p><strong className="text-white">Day 1:</strong> Balance, Form &amp; Drive</p>
-                  <p><strong className="text-white">Day 2:</strong> Arm Care, Home Strengthening &amp; Long Toss</p>
+                <div className="space-y-1 text-white/80 text-sm mb-4">
+                  <p><strong className="text-white">Session 1:</strong> 9:00 AM – 11:00 AM</p>
+                  <p><strong className="text-white">Session 2:</strong> 11:45 AM – 1:45 PM</p>
+                  <p className="text-white/60 text-xs pt-1">Session 2 includes Major League Instruction</p>
                 </div>
-                <div className="flex gap-4">
-                  <div className="bg-white/10 rounded px-4 py-2 text-center">
-                    <p className="text-[#a89a5c] font-bold text-xl">$75</p>
-                    <p className="text-white text-xs">Ages 9-11</p>
-                    <p className="text-white/50 text-xs">10AM-12PM</p>
-                  </div>
-                  <div className="bg-white/10 rounded px-4 py-2 text-center">
-                    <p className="text-[#a89a5c] font-bold text-xl">$100</p>
-                    <p className="text-white text-xs">Ages 13-14</p>
-                    <p className="text-white/50 text-xs">12PM-2PM</p>
-                  </div>
+                <div className="bg-white/10 p-3 mb-4 text-white/80 text-xs space-y-1">
+                  <p><strong className="text-white">Mon / Wed / Fri:</strong> R2G Performance Training</p>
+                  <p><strong className="text-white">Tue / Thu:</strong> Agility, Throwing, Defense, Hitting, S&amp;C</p>
+                  <p><strong className="text-white">Elite Track:</strong> Skill Dev, ML Coaching, Higher Intensity</p>
+                </div>
+                <div className="grid grid-cols-3 gap-2">
+                  {[
+                    { price: '$335', label: 'Full / Week' },
+                    { price: '$835', label: 'Full / Month' },
+                    { price: '$45+', label: 'Drop-In / Day' },
+                  ].map(({ price, label }) => (
+                    <div key={label} className="bg-white/10 rounded px-3 py-2 text-center">
+                      <p className="text-[#ffd27a] font-bold text-lg">{price}</p>
+                      <p className="text-white text-xs">{label}</p>
+                    </div>
+                  ))}
                 </div>
               </div>
-              <div className="text-center md:text-right">
-                <Link href="/spring-break-pitching" className="inline-block bg-white text-red-700 px-8 py-4 font-bold text-lg uppercase tracking-wider hover:bg-gray-100 transition-colors">
-                  Register Now
-                </Link>
+              <div className="flex flex-col items-center md:items-end gap-4">
+                <a href="/r2g-summer-program.png" target="_blank" rel="noopener" className="block w-full max-w-sm">
+                  <Image
+                    src="/r2g-summer-program.png"
+                    alt="R2G Summer Performance Program flyer"
+                    width={800}
+                    height={1000}
+                    className="w-full h-auto border-4 border-white shadow-lg"
+                  />
+                </a>
+                <div className="flex flex-col gap-2 w-full max-w-sm">
+                  <a href="tel:3522986699" className="block text-center bg-white text-orange-700 px-6 py-3 font-bold text-sm uppercase tracking-wider hover:bg-gray-100 transition-colors">
+                    Call 352-298-6699
+                  </a>
+                  <a href="mailto:r2gacademy@gmail.com" className="block text-center bg-orange-800 text-white px-6 py-3 font-bold text-sm uppercase tracking-wider hover:bg-orange-900 transition-colors">
+                    Email to Reserve
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -528,27 +548,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Video Section — "Building the Dream" */}
-      <section className="py-16 bg-[#1a1a1a]">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <span className="text-[#a89a5c] font-bold text-sm uppercase tracking-widest">See Us In Action</span>
-            <h2 className="font-display text-4xl md:text-5xl text-white mt-2">BUILDING THE DREAM</h2>
-          </div>
-
-          {/* YouTube Video */}
-          <div className="aspect-video rounded-lg overflow-hidden shadow-2xl">
-            <iframe
-              src="https://www.youtube.com/embed/nIXl5PC6N9Q"
-              style={{ width: '100%', height: '100%', border: 'none' }}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              title="R2G Academy - Building the Dream"
-            />
           </div>
         </div>
       </section>
