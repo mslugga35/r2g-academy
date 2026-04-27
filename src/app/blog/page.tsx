@@ -5,6 +5,15 @@ import Link from 'next/link';
 
 const blogPosts = [
   {
+    slug: 'mental-game-youth-baseball-softball-confidence-focus',
+    title: 'Building Mental Toughness: How Young Athletes Can Master the Mental Side of Baseball and Softball',
+    excerpt: 'The mental game accounts for up to 90% of performance in baseball and softball, yet it\'s often overlooked in youth training. Learn proven techniques to help young athletes develop confidence, focus, and resilience that will elevate their game and translate to success both on and off the field.',
+    image: 'https://images.unsplash.com/photo-1471295253337-3ceaaedca402?w=800&q=80',
+    date: '2026-04-27',
+    readTime: '5 min read',
+    category: 'Youth Development',
+  },
+  {
     slug: 'building-mental-toughness-young-baseball-softball-players',
     title: 'Building Mental Toughness in Young Baseball and Softball Players: Strategies for Success',
     excerpt: 'Mental toughness is just as important as physical skills in youth baseball and softball. Learn proven techniques to help young athletes develop confidence, focus, and resilience both at the plate and in the field.',
