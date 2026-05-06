@@ -134,7 +134,7 @@ export default function RootLayout({
                       "@type": "Service",
                       name: "Training with Tony Vega",
                       description: "Private 1-on-1 baseball training with former Duke coach",
-                      price: "125",
+                      price: "85",
                       priceCurrency: "USD",
                     },
                   },
@@ -205,7 +205,7 @@ export default function RootLayout({
                   name: "What are the prices for baseball training at R2G Academy?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "R2G Academy offers: Cage Rentals — team sessions at $250 for 2 hours and single cage batting practice (use code KICKOFF50 for $50 off team rentals), Group Open Field Workout with ex-MLB Player Jemile Weeks at $70 for 2 hours, After School Program at $100/week (Monday-Friday), Fitness Assessment at $75 for 45 minutes, and Private Training with Former Duke Coach Tony Vega at $125/hour.",
+                    text: "R2G Academy offers: Cage Rentals — team sessions at $250 for 2 hours and single cage batting practice (use code KICKOFF50 for $50 off team rentals), Group Open Field Workout with ex-MLB Player Jemile Weeks at $70 for 2 hours, After School Program at $100/week (Monday-Friday), Fitness Assessment at $75 for 45 minutes, and Private Training with Former Duke Coach Tony Vega at $85/hour.",
                   },
                 },
                 {

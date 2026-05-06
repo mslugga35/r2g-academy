@@ -392,7 +392,7 @@ export default function Home() {
               </div>
               <h3 className="font-display text-3xl text-white mb-1 text-center">Training with Tony Vega</h3>
               <p className="text-[#a89a5c] text-xs font-bold uppercase tracking-wider text-center mb-3">Former Duke Coach</p>
-              <div className="text-[#a89a5c] font-display text-4xl mb-2 text-center">$125</div>
+              <div className="text-[#a89a5c] font-display text-4xl mb-2 text-center">$85</div>
               <p className="text-white/70 mb-4 text-center">1 hour • One-on-one</p>
               <p className="text-white/60 text-sm mb-6 text-center">
                 Elite training with experienced coaching.

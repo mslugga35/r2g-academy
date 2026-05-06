@@ -59,7 +59,7 @@ test.describe('R2G Academy Website', () => {
     await expect(page.locator('text=Fitness Assessment').first()).toBeVisible();
 
     // Prices (Cage $250 tested separately in client fix section)
-    await expect(page.locator('text=$125').first()).toBeVisible(); // Tony
+    await expect(page.locator('text=$85').first()).toBeVisible(); // Tony
     await expect(page.locator('text=$70').first()).toBeVisible();  // Jemile
     await expect(page.locator('text=$100').first()).toBeVisible(); // After School
     await expect(page.locator('text=$75').first()).toBeVisible();  // Fitness
