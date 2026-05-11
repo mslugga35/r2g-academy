@@ -5,6 +5,15 @@ import Link from 'next/link';
 
 const blogPosts = [
   {
+    slug: 'youth-baseball-mental-game-building-confidence-focus',
+    title: 'The Mental Game: Building Confidence and Focus in Young Baseball and Softball Players',
+    excerpt: 'Mental toughness is just as important as physical skills in youth baseball and softball. Learn practical strategies to help young athletes develop confidence, overcome pressure, and maintain focus during games and practices.',
+    image: 'https://images.unsplash.com/photo-1471295253337-3ceaaedca402?w=800&q=80',
+    date: '2026-05-11',
+    readTime: '5 min read',
+    category: 'Youth Development',
+  },
+  {
     slug: 'mental-game-youth-baseball-softball-confidence-focus',
     title: 'Building Mental Toughness: How Young Athletes Can Develop Confidence and Focus on the Diamond',
     excerpt: 'Mental strength is just as important as physical skills in youth baseball and softball. Learn proven techniques to help young players overcome pressure, build confidence, and maintain focus during games and practice.',
