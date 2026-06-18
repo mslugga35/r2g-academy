@@ -403,8 +403,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Row 2: Jahmon Taylor (centered) */}
-          <div className="max-w-md mx-auto">
+          {/* Row 2: Jahmon Taylor + Justin Austin */}
+          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {/* 4. Jahmon Taylor - Pitching & Mental Approach */}
             <div className="bg-[#1a2855] p-6 md:p-8 relative overflow-hidden group">
               <div className="relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-[#a89a5c]">
@@ -423,6 +423,40 @@ export default function Home() {
               </p>
               <a href="mailto:coach@trainingwithinertia.com" className="inline-block bg-[#a89a5c] text-[#1a2855] px-6 py-3 font-bold text-sm uppercase tracking-wider hover:bg-[#c4b87a] transition-colors w-full text-center">
                 Email to Book: coach@trainingwithinertia.com
+              </a>
+            </div>
+
+            {/* 5. Justin Austin - Hitting Lessons */}
+            <div className="bg-[#1a2855] p-6 md:p-8 relative overflow-hidden group">
+              <div className="relative w-full h-32 mb-4 rounded overflow-hidden border-4 border-[#a89a5c]">
+                <Image
+                  src="/images/justin.jpg"
+                  alt="Justin Austin hitting"
+                  fill
+                  className="object-cover object-top"
+                />
+              </div>
+              <h3 className="font-display text-3xl text-white mb-1 text-center">Justin Austin</h3>
+              <p className="text-[#a89a5c] text-xs font-bold uppercase tracking-wider text-center mb-3">Baseball Hitting Lessons</p>
+              <div className="text-[#a89a5c] font-display text-4xl mb-1 text-center">$90</div>
+              <p className="text-white/70 mb-4 text-center">1 hour • One-on-one</p>
+
+              {/* Career stat line */}
+              <div className="grid grid-cols-4 gap-2 mb-4 text-center">
+                <div><div className="text-[#a89a5c] font-display text-xl leading-none">.301</div><div className="text-white/50 text-[10px] uppercase tracking-wider">AVG</div></div>
+                <div><div className="text-[#a89a5c] font-display text-xl leading-none">17</div><div className="text-white/50 text-[10px] uppercase tracking-wider">HR</div></div>
+                <div><div className="text-[#a89a5c] font-display text-xl leading-none">56</div><div className="text-white/50 text-[10px] uppercase tracking-wider">RBI</div></div>
+                <div><div className="text-[#a89a5c] font-display text-xl leading-none">.435</div><div className="text-white/50 text-[10px] uppercase tracking-wider">OBP</div></div>
+              </div>
+
+              <ul className="text-white/60 text-sm mb-6 space-y-1">
+                <li>• Gold Glove Team (LF) • AAC Co-Player of the Week</li>
+                <li>• AAC All-District & All-Academic Team</li>
+                <li>• Efficient mechanics & smart approach at the plate</li>
+              </ul>
+
+              <a href="tel:3478761870" className="inline-block bg-[#a89a5c] text-[#1a2855] px-6 py-3 font-bold text-sm uppercase tracking-wider hover:bg-[#c4b87a] transition-colors w-full text-center">
+                Call to Book: 347-876-1870
               </a>
             </div>
           </div>
