@@ -37,6 +37,13 @@ yarn-error.log*
 # vercel
 .vercel
 
+# local source/scratch assets (flyers, backups, work artifacts — not deployed)
+/Trainer/
+/Summer/
+/FIX/
+/.api-backup/
+/flyer/
+/public/_headers
 # typescript
 *.tsbuildinfo
 next-env.d.ts
