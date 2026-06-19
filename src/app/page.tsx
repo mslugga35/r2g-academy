@@ -36,6 +36,7 @@ export default function Home() {
               <a href="#wins" className="text-white/80 hover:text-[#a89a5c] font-semibold text-sm uppercase tracking-wider transition-colors">Results</a>
               <a href="#gallery" className="text-white/80 hover:text-[#a89a5c] font-semibold text-sm uppercase tracking-wider transition-colors">Gallery</a>
               <Link href="/blog" className="text-white/80 hover:text-[#a89a5c] font-semibold text-sm uppercase tracking-wider transition-colors">Blog</Link>
+              <a href="#recruiting" className="text-white/80 hover:text-[#a89a5c] font-semibold text-sm uppercase tracking-wider transition-colors">Recruiting</a>
               <a href="#contact" className="text-white/80 hover:text-[#a89a5c] font-semibold text-sm uppercase tracking-wider transition-colors">Contact</a>
               <a href="#services" className="bg-[#a89a5c] text-[#1a2855] px-5 py-2 font-bold text-sm uppercase tracking-wider hover:bg-[#c4b87a] transition-colors">
                 Book Now
@@ -477,6 +478,24 @@ export default function Home() {
               </a>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Recruiting Section — Jemile Weeks recruiting for baseball & softball */}
+      <section id="recruiting" className="py-20 md:py-28 bg-[#a89a5c] relative overflow-hidden scroll-mt-24">
+        <div className="absolute inset-0 opacity-10">
+          <div className="halftone w-full h-full" />
+        </div>
+        <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 text-center">
+          <span className="text-[#1a2855] font-bold text-sm uppercase tracking-widest">Get Recruited</span>
+          <h2 className="font-display text-5xl md:text-6xl text-[#1a2855] mt-2 mb-4">PLAY AT THE NEXT LEVEL</h2>
+          <p className="text-[#1a2855]/80 text-lg max-w-2xl mx-auto mb-8">
+            Serious about playing in college? Jemile Weeks runs a dedicated recruiting program for
+            <strong> baseball and softball</strong> players — exposure, evaluation, and a real plan to get you seen by coaches.
+          </p>
+          <a href="https://realjemileweeks.com/recruiting" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#1a2855] text-white px-10 py-4 font-bold uppercase tracking-wider hover:bg-[#0f1a38] transition-colors text-lg">
+            Start Your Recruiting Journey
+          </a>
         </div>
       </section>
 
