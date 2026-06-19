@@ -487,14 +487,12 @@ export default function Home() {
           <div className="halftone w-full h-full" />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <span className="text-[#1a2855] font-bold text-sm uppercase tracking-widest">Get Recruited</span>
-          <h2 className="font-display text-5xl md:text-6xl text-[#1a2855] mt-2 mb-4">PLAY AT THE NEXT LEVEL</h2>
-          <p className="text-[#1a2855]/80 text-lg max-w-2xl mx-auto mb-8">
-            Serious about playing in college? Jemile Weeks runs a dedicated recruiting program for
-            <strong> baseball and softball</strong> players — exposure, evaluation, and a real plan to get you seen by coaches.
+          <h2 className="font-display text-5xl md:text-6xl text-[#1a2855] mb-4">WANT TO GET RECRUITED?</h2>
+          <p className="text-[#1a2855]/80 text-lg max-w-xl mx-auto mb-8">
+            Baseball &amp; softball players — get seen by college coaches with Jemile Weeks.
           </p>
           <a href="https://realjemileweeks.com/recruiting" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#1a2855] text-white px-10 py-4 font-bold uppercase tracking-wider hover:bg-[#0f1a38] transition-colors text-lg">
-            Start Your Recruiting Journey
+            Get Recruited
           </a>
         </div>
       </section>
