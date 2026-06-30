@@ -41,6 +41,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.9,
     },
+    // Catchers Camp registration
+    {
+      url: `${baseUrl}/catchers-camp`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
     // Blog posts
     ...blogPosts.map((slug) => ({
       url: `${baseUrl}/blog/${slug}`,

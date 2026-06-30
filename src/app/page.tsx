@@ -304,6 +304,36 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Catchers Camp — Kiley Strott */}
+          <div className="mb-8 bg-[#1a2855] p-6 md:p-8 border-4 border-[#a89a5c]">
+            <div className="grid md:grid-cols-2 gap-6 items-center">
+              <div>
+                <div className="inline-block bg-[#a89a5c] text-[#1a2855] text-xs font-bold px-3 py-1 uppercase tracking-widest mb-3">July Camp</div>
+                <h3 className="font-display text-3xl text-white mb-1">Catchers Camp</h3>
+                <p className="text-[#a89a5c] font-semibold mb-1">with Kiley Strott &mdash; USF Catcher, Lake Brantley Alum</p>
+                <p className="text-white/80 mb-2">Every Thursday in July (7/2&ndash;7/30) &bull; 1&ndash;3 PM</p>
+                <div className="flex items-baseline gap-3 mb-1">
+                  <span className="text-[#a89a5c] font-display text-4xl">$160</span>
+                  <span className="text-white/60 text-sm">full month &bull; 5th session free</span>
+                </div>
+                <p className="text-white/50 text-sm">or $40 per single session</p>
+              </div>
+              <div className="text-center md:text-right">
+                <div className="relative w-28 h-28 mx-auto md:ml-auto md:mr-0 mb-4 rounded-full overflow-hidden border-4 border-[#a89a5c]">
+                  <Image
+                    src="/images/kiley-strott.jpg"
+                    alt="Kiley Strott — USF catcher"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <Link href="/catchers-camp" className="inline-block bg-[#a89a5c] text-[#1a2855] px-8 py-4 font-bold text-sm uppercase tracking-wider hover:bg-[#c4b87a] transition-colors">
+                  Register Now
+                </Link>
+              </div>
+            </div>
+          </div>
+
           {/* Fitness Assessment — under Saturday S&C */}
           <div className="mb-8 bg-white border-4 border-[#1a2855] p-6 md:p-8 hover:border-[#a89a5c] transition-colors max-w-lg">
             <h3 className="font-display text-2xl text-[#1a2855] mb-2">Fitness Assessment</h3>
